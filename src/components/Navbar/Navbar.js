@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './navbar.scss';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link, animateScroll as scroll} from 'react-scroll';
 import classnames from "classnames";
 
 

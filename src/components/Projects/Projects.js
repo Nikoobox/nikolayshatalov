@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './projects.scss';
-import { Element } from 'react-scroll'
+// import { Element } from 'react-scroll'
 import Project from './Project';
 import {projectsData} from '../../projectsData';
-import {Link} from 'react-scroll'
+// import {Link} from 'react-scroll'
 
 export default class Projects extends Component {
 

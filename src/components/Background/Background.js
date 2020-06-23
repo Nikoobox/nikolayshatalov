@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './background.scss';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import Img from './background_b.jpg';
+import { Link } from 'react-scroll';
+// import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+// import Img from './background_b.jpg';
 
 
 
@@ -10,7 +11,7 @@ export default class Background extends Component {
         return (
        
             <section className="background">
-                {/* <img src={Img} alt="back-img" className="background-image" /> */}
+                
                 <div className="background-img">
                 <div className="background-overlay"></div>
                 </div>
