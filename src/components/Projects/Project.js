@@ -6,7 +6,7 @@ import './projects.scss';
 export default class Test extends Component {
     
     render() {
-        const {id,name,img,tools,info,address}=this.props.project;
+        const {name,img,tools,info,address}=this.props.project;
         return (
             
                     <div className="grid__item">
