@@ -7,7 +7,7 @@ export default class Contact extends Component {
             <section className="contact-section">
             <div className="contact-title" id="contact-destination">Contact</div>
                 <div className="row">
-                    <div className="col-8 mx-auto col-md-5">
+                    <div className="col-10 col-md-6 mx-auto">
                         <form className="contact-form" method="POST" action="https://formspree.io/nikoobox@gmail.com">
                         <div className="form-group">
                             <input type="text" name="name" className="form-control" placeholder="Name"/>
