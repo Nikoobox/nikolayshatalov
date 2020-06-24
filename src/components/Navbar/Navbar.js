@@ -27,14 +27,16 @@ export default class Navbar extends Component {
       // Hide or show the menu.
       handleScroll = () => {
         const { prevScrollpos } = this.state;
-    
+        // console.log(prevScrollpos);
         const currentScrollPos = window.pageYOffset;
         const visible = prevScrollpos > currentScrollPos;
-    
-        this.setState({
-          prevScrollpos: currentScrollPos,
-          visible
-        });
+        if (currentScrollPos>300){
+          this.setState({
+            prevScrollpos: currentScrollPos,
+            visible
+          });
+        }
+        
       };
 
 
