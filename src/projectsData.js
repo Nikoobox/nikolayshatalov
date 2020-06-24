@@ -23,7 +23,7 @@ export const projectsData = [
     img: "./img/ds22.png",
     tools: ["HTML", "CSS", "Javascript"],
     info:
-      "The best online game in a world allows you to hunt for your most favorite beer",
+      "The best online game in the world allows you to hunt for your most favorite beer",
     address: "https://drunkensnake.online/"
   },
   {
