@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     name: "Personal Portfolio",
-    img: "./img/kh22.png",
+    img: "./img/karenahuang.png",
     tools: ["HTML", "CSS", "Javascript", "jQuery"],
     info:
       "Website-portfolio for NYC based Graphic Designer and Art-Director working in beauty industry",
@@ -11,7 +11,7 @@ export const projectsData = [
   {
     id: 2,
     name: "Cyberaction Samara",
-    img: "./img/ca22.png",
+    img: "./img/ca.png",
     tools: ["HTML", "CSS", "Javascript", "Bootsrtap"],
     info:
       "The first and largest Virtual Reality Gaming Arena located in Samara, Russia",
