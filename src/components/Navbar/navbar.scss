@@ -65,7 +65,7 @@ li{
 @media(max-width: 768px){
     .nav-bar{
         background:darken( $mainGreen,10%);
-        padding:1rem 1rem;
+        padding:0.3rem 1rem;
         .name{
             color: $mainWhite;
         }
