@@ -64,9 +64,22 @@ li{
 
 @media(max-width: 768px){
     .nav-bar{
+        background:darken( $mainGreen,10%);
         padding:1rem 1rem;
+        .name{
+            color: $mainWhite;
+        }
         .nav-link{
             padding:0.5rem 0 0.5rem 1rem;
+        }
+    }
+    li{
+        a{
+            
+            color:$mainWhite;
+            &:hover{
+                color:$mainWhite;
+            }
         }
     }
 
