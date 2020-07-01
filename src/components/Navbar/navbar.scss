@@ -68,6 +68,10 @@ li{
         padding:0.3rem 1rem;
         .name{
             color: $mainWhite;
+            &:hover{
+                // text-decoration: none;
+                color:$mainWhite;
+            }   
         }
         .nav-link{
             padding:0.5rem 0 0.5rem 1rem;
