@@ -3,7 +3,7 @@ import './navbar.scss';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import classnames from "classnames";
 
-
+// import resume from '../../../public/docs/Nikolay_Shatalov_Resume.pdf';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -14,12 +14,10 @@ export default class Navbar extends Component {
         };
       }
 
-      // Adds an event listener when the component is mount.
       componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
       }
     
-      // Remove the event listener when the component is unmount.
       componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
       }
@@ -27,7 +25,6 @@ export default class Navbar extends Component {
       // Hide or show the menu.
       handleScroll = () => {
         const { prevScrollpos } = this.state;
-        // console.log(prevScrollpos);
         const currentScrollPos = window.pageYOffset;
         const visible = prevScrollpos > currentScrollPos;
         if (currentScrollPos>300){
@@ -40,6 +37,7 @@ export default class Navbar extends Component {
       };
 
 
+      // <li><a href={`${resume}`} download className='nav-link' >Resume</a></li>
       
     render() {
         return (
@@ -51,7 +49,7 @@ export default class Navbar extends Component {
                     <li><Link href='/' className='nav-link' to="projects-destination" smooth={true} duration={1200}>Projects</Link></li>
 
                     <li><Link href='/' className='nav-link' to="contact-destination" smooth={true} duration={1200}>Contact</Link></li>
-                </ul>
+                </ul>  
             </nav>
         )
     }

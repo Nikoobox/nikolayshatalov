@@ -42,7 +42,7 @@ li{
         display:inline-block;
         color:$mainBlack;
         font-size: 1.4rem;
-        font-weight: 600;
+        font-weight: 300;
         &:hover{
             color:$mainBlack;
         }
@@ -56,6 +56,7 @@ li{
     height:2px;
     background:$mainWhite;
     transition: width 0.3s;
+    
 }
 .nav-link:hover::after{
     width:100%;

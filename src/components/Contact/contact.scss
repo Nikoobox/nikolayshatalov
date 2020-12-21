@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
-
-
-
 .contact-section{
     background: $mainGreen;
     padding-bottom: 10%;
     .row{
-        width:100%
+        width:100%;
+        margin:0;
     }
     
     .contact-title{
@@ -21,7 +19,6 @@
         font-size: 2.5rem;
         text-align: center;
         padding-top: 10%;
-        // margin-top:10%;
         font-family: 'Open Sans', sans-serif;
     }
     .form-group{
@@ -35,9 +32,9 @@
         background:darken($mainGreen, 10%)!important ;
         color:$mainWhite!important;
     }
+
     .contact-button-box{
         text-align: center;
-
         .contact-button{
             line-height: 1.8rem;
             color:$mainWhite;
@@ -47,7 +44,6 @@
             padding: 0.3rem 1.8rem;
             transition: ease-out 0.3s all;
             margin-top:4%;
-
             &:hover{
                 border: $mainWhite solid 2px;
                 background: $mainWhite;
@@ -55,6 +51,4 @@
             }
         }
     }
-    
-
 }
