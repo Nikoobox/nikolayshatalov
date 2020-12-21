@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import './projects.scss';
-import { Link } from 'react-router-dom';
 
 export default class Test extends Component {
     
     render() {
         const {name,img,tools,info,address, repo}=this.props.project;
         return (
-            
-            // <a href={`${address}`} className="card_box">  
                 <div className="card_box">
                     <div className="card">
                         <div className='img_box'>
@@ -41,8 +37,6 @@ export default class Test extends Component {
                         </div> 
                     </div>
                 </div>
-            // </a>
-           
         )
     }
 }
