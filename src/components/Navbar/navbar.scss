@@ -42,7 +42,7 @@ li{
         display:inline-block;
         color:$mainBlack;
         font-size: 1.4rem;
-        font-weight: 300;
+        font-weight: 600;
         &:hover{
             color:$mainBlack;
         }
@@ -79,7 +79,7 @@ li{
     }
     li{
         a{
-            
+            font-weight: 300;
             color:$mainWhite;
             &:hover{
                 color:$mainWhite;
