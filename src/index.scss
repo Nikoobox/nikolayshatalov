@@ -1,21 +1,16 @@
+@import "./variables/colors";
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
   }
-  //SASS COLOR VARIABLES
-  $mainBlack:#222;
-  $mainGreen:#1a394d;
-  $mainBlue:#243665;
-  $mainWhite:#fff;
-  $secondary:#8bd8bd;
-  $mainGrey: #6c757d;
-  
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
+  
   body{
     font-family: 'Nunito', sans-serif!important;
-    // font-family: 'Varela Round', sans-serif!important;
-    background:$mainWhite;
+  }
+
+  #root{
+    width:100%;
   }

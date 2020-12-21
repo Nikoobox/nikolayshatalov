@@ -20,11 +20,11 @@ export default class Projects extends Component {
                 <div className="projects-title" id="projects-destination">Projects</div>
                 
                 <div className='projects'>
-                <div className='grid'>
-                {projects.map(project=>(
-                     <Project key={project.id} project={project}/>
-                ))}
-                </div>
+                    <div className='grid'>
+                    {projects.map(project=>(
+                        <Project key={project.id} project={project}/>
+                    ))}
+                    </div>
                 </div>
             </article>
             
