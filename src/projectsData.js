@@ -37,7 +37,7 @@ export const projectsData = [
     info:
       "Website-portfolio for NYC based Graphic Designer and Art-Director working in beauty industry",
     address: "https://karenahuang.com/",
-    repo: "https://github.com/Nikoobox/pomegranate"
+    // repo: "https://github.com/Nikoobox//karenahuang"
   },
   {
     id: 5,
