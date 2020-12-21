@@ -1,8 +1,4 @@
 @import '../../index.scss';
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
-
-
 
 .background{
     // position:relative;
@@ -40,6 +36,9 @@
 	left: 50%;
     transform: translate(-50%, -50%);
     width:75%;
+    @media(min-width: 1400px){
+        width:50%;
+    }
     .background-button{
         line-height: 2.4rem;
         color:$mainWhite;

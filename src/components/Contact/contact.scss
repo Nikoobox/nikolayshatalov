@@ -8,6 +8,9 @@
 .contact-section{
     background: $mainGreen;
     padding-bottom: 10%;
+    .row{
+        width:100%
+    }
     
     .contact-title{
         color:$mainWhite;
