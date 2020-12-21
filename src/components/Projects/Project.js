@@ -4,6 +4,11 @@ export default class Test extends Component {
     
     render() {
         const {name,img,tools,info,address, repo}=this.props.project;
+
+        const isRepo = repo ? <a href={`${repo}`} rel='noopener noreferrer' target="_blank" className='repo_link'>
+            <button>Repo</button>
+        </a> : '';
+
         return (
                 <div className="card_box">
                     <div className="card">
@@ -30,9 +35,8 @@ export default class Test extends Component {
                                     <button>Live Link</button>
                                 </a>
 
-                                <a href={`${repo}`} rel='noopener noreferrer' target="_blank" className='repo_link'>
-                                    <button>Repo</button>
-                                </a>
+                                {isRepo}
+                                
                             </div>
                         </div> 
                     </div>

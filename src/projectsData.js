@@ -47,7 +47,7 @@ export const projectsData = [
     info:
       "The first and largest Virtual Reality Gaming Arena located in Samara, Russia",
     address: "https://cyberactionsamara.ru/",
-    repo: "https://github.com/Nikoobox/cyberaction"
+    // repo: "https://github.com/Nikoobox/cyberaction"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const projectsData = [
     info:
       "The best online game in the world allows you to hunt for your most favorite beer",
     address: "https://drunkensnake.online/",
-    repo: "https://github.com/Nikoobox/drunkensnake"
+    // repo: "https://github.com/Nikoobox/drunkensnake"
   },
   {
     id: 7,
@@ -67,6 +67,6 @@ export const projectsData = [
     info:
       "Fully responsive, functional, and minimalistic portfolio with beautiful interface",
     address: "https://nikolayshatalov.com/",
-    repo: "https://github.com/Nikoobox/nikolayshatalov"
+    // repo: "https://github.com/Nikoobox/nikolayshatalov"
   }
 ];
