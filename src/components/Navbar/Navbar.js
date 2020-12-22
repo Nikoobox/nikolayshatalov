@@ -3,7 +3,7 @@ import './navbar.scss';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import classnames from "classnames";
 // import { Document } from 'react-pdf'
-import resume from './nikolay_shatalov_resume.pdf';
+import resume from '../../docs/nikolay_shatalov_resume.pdf';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -35,9 +35,6 @@ export default class Navbar extends Component {
         }
         
       };
-
-
-      // <li><a href={`${resume}`} download className='nav-link' >Resume</a></li>
       
     render() {
         return (
@@ -46,7 +43,7 @@ export default class Navbar extends Component {
 
                 <ul className="nav-links">
 
-              <li><a href={`${resume}`} className='nav-link' target="_blank">Resume</a></li>
+              <li><a href={resume} className='nav-link' target="_blank">Resume</a></li>
 
                     <li><Link href='/' className='nav-link' to="projects-destination" smooth={true} duration={1200}>Projects</Link></li>
 
