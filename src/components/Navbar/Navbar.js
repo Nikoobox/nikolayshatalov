@@ -43,12 +43,12 @@ export default class Navbar extends Component {
 
                 <ul className="nav-links">
 
-              <li><a href={resume} className='nav-link' target="_blank" rel='noopener noreferrer'>Resume</a></li>
 
                     <li><Link href='/' className='nav-link' to="projects-destination" smooth={true} duration={1200}>Projects</Link></li>
 
                     <li><Link href='/' className='nav-link' to="contact-destination" smooth={true} duration={1200}>Contact</Link></li>
 
+                    <li><a href={resume} className='nav-link' target="_blank" rel='noopener noreferrer'>Resume</a></li>
 
                     {/* <li>
                       <Document
