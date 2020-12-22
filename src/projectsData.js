@@ -5,7 +5,7 @@ export const projectsData = [
     img: "./img/treecamp2.png",
     tools: ["Ruby", "Rails", "Javascript", "React", "Redux", "PostgreSQL", "AWS", "Webpack"],
     info:
-      "Pixel perfect site-clone with platform to explore, search and book the most unique treehouses in a world.",
+      "Pixel perfect clone of HipCamp with platform to explore, search and book the most unique treehouses in a world. Fully responsive.",
     address: "https://tree-camp.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/TreeCamp"
   },
@@ -35,7 +35,7 @@ export const projectsData = [
     img: "./img/karenahuang.png",
     tools: ["HTML", "CSS", "Javascript", "jQuery"],
     info:
-      "Website-portfolio for NYC based Graphic Designer and Art-Director working in beauty industry",
+      "Website-portfolio for NYC based Graphic Designer and Art-Director working in beauty industry. Fully responsive.",
     address: "https://karenahuang.com/",
     // repo: "https://github.com/Nikoobox//karenahuang"
   },
@@ -45,7 +45,7 @@ export const projectsData = [
     img: "./img/ca.png",
     tools: ["HTML", "CSS", "Javascript", "Bootsrtap"],
     info:
-      "The first and largest Virtual Reality Gaming Arena located in Samara, Russia",
+      "The first and largest Virtual Reality Gaming Arena located in Samara, Russia. Fully responsive.",
     address: "https://cyberactionsamara.ru/",
     // repo: "https://github.com/Nikoobox/cyberaction"
   },

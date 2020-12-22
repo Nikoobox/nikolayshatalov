@@ -7,7 +7,7 @@ import classnames from "classnames";
 
 export default class Navbar extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
           prevScrollpos: window.pageYOffset,
           visible: true

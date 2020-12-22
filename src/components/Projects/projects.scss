@@ -1,5 +1,7 @@
 @import '../../index.scss';
 
+button:focus {outline:0;}
+
 .projects-title{
     font-size: 2.5rem;
     text-align: center;
@@ -112,19 +114,24 @@
               width:100px;
               text-decoration: none;
               color: $mainGreen;
-              transition: all 0.2s ease-out;
-              &:hover{
-                  transform: translateY(-5%);
-                }
               button{
                 background:transparent;
                 padding:0;
                 border:0;
-                border-bottom:2px solid $mainGreen;
                 color: $mainGreen;
                 font-size:18px;
                 font-weight:600;
-                transition: all 0.2s ease-out;
+              }
+              button::after{
+                content:'';
+                display:block;
+                border-bottom:2px solid $mainGreen;
+                width:0;
+                transition: width 0.3s;
+                }
+              button:hover::after{
+                  width:100%;
+                  transition: width 0.3s;
               }
             }
           }
