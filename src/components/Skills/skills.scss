@@ -4,18 +4,18 @@
     background: $mainBackground;
     padding: 0 100px;
     @media(min-width: 1200px){
-        padding: 0 100px 100px;
+        padding: 0 100px 0;
     }
     @media(min-width: 1600px){
-        padding: 0 250px 100px;
+        padding: 0 250px 0;
     }
     @media(max-width: 1000px){
         width:100%;
-        padding: 0 20% 100px;
+        padding: 0 20% 0;
     }
     @media(max-width: 768px){
         width:100%;
-        padding: 0 1rem 100px;
+        padding: 0 1rem 0;
     }
     .skills-title{
         padding:10% 10% 5%;

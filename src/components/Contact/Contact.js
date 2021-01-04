@@ -12,7 +12,7 @@ export default class Contact extends Component {
                 <div className='about-container'>
                     <div className='about-box'>
                         <div className='img-box'>
-                            <img src={nsImg}/>
+                            <img src={nsImg} alt='Nikolay Shatalov Image'/>
                         </div> 
                         <div className='info'>
                             <div className='info-text'>
