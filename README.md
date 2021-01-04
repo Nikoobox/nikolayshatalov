@@ -5,7 +5,7 @@
 </div>
 
 ## About
-Nikolay Shatalov is a software engineer based in Brooklyn, NY. 
+Simple, elegant and fully responsive website-portfolio.
 
 ## Libraries, Languages and Technologies
 
