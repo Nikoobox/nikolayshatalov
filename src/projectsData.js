@@ -3,9 +3,9 @@ export const projectsData = [
     id: 1,
     name: "Tree Camp",
     img: "./img/treecamp2.png",
-    tools: ["Ruby", "Rails", "Javascript", "React", "Redux", "PostgreSQL", "AWS", "Webpack"],
+    tools: ["Ruby", "Rails", "Javascript", "React", "Redux", "PostgreSQL", "AWS", "Webpack", "Google Maps API"],
     info:
-      "Pixel perfect clone of HipCamp with platform to explore, search and book the most unique treehouses in a world. Fully responsive.",
+      "Clone of HipCamp with platform to search, book and review the most unique treehouses in a world.",
     address: "https://tree-camp.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/TreeCamp"
   },

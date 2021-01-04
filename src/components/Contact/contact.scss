@@ -8,11 +8,71 @@
     .row{
         width:100%;
         margin:0;
+        .lets-connect{
+            font-size: 2rem;
+            margin-bottom:10px;
+            text-align: center;
+            color:darken($mainGreen, 10%);
+        }
     }
     
     .contact-title{
         color:$mainWhite;
         padding-bottom: 3%;
+    }
+
+    .about-container{
+        // width:700px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 150px;;
+        .about-box{
+            width:800px;
+            display:flex;
+            align-items: flex-start;
+            justify-content: center;
+            
+            .img-box{
+                width:35%;
+                // min-width:200px;
+                overflow:hidden;
+                border-radius: 50%;;
+                img{
+                    width:100%;
+                }
+            }
+            .info{
+                margin-left:35px;
+                width: 65%;;
+                color:white;
+                font-size:20px;
+                .info-text{
+                    margin-bottom:25px;
+                }
+                a{
+                text-decoration:none;
+                color:white;
+                border: 2px white solid;
+                padding: 0.3rem 1.8rem;
+                text-decoration: none;
+                transition: ease 0.2s all;
+                font-size: 20px;
+                &:hover{
+                    border: 2px white solid;
+                    background: white;
+                    color:$mainGreen;
+                    cursor:pointer;
+                }
+            }
+            }
+        }
+        // .resume-box{
+        //     margin-top: 20px;
+        //     margin-left:35px;
+           
+        // }
     }
 
     .contact-title{
