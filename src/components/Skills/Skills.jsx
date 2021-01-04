@@ -5,12 +5,7 @@ import { SiJavascript, SiReact, SiRedux, SiRuby, SiRails, SiHtml5, SiCss3, SiJqu
 import { IoLogoNodejs } from "react-icons/io";
 import d3jsIcon from './d3js.png'
 
-class Skills extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    
+class Skills extends React.Component {  
 
     render() {
 
