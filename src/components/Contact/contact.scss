@@ -29,7 +29,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap:wrap;
-        margin-bottom: 150px;;
+        margin-bottom: 150px;
         .about-box{
             max-width:800px;
             display:flex;
@@ -38,6 +38,8 @@
              @media(max-width: 768px){
                 width:100%;
                 flex-wrap:wrap;
+                align-items: center;
+                flex-direction: column;
             }
             .img-box{
                 width:35%;
@@ -50,12 +52,17 @@
             }
             .info{
                 margin-left:35px;
-                @media(max-width: 768px){
-                    margin-left:10px;
-                }
                 width: 65%;;
                 color:white;
                 font-size:20px;
+                @media(max-width: 768px){
+                    margin-left:0;
+                    padding: 0 15px;
+                    width:100%;
+                    display:flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
                 .info-text{
                     margin-top:10px;
                     margin-bottom:40px;
@@ -68,6 +75,9 @@
                 text-decoration: none;
                 transition: ease 0.2s all;
                 font-size: 20px;
+                @media(max-width: 768px){
+                    text-align: center;
+                }
                 &:hover{
                     border: 2px white solid;
                     background: white;
