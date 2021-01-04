@@ -67,6 +67,6 @@ export const projectsData = [
     info:
       "Fully responsive, functional, and minimalistic portfolio with beautiful interface",
     address: "https://nikolayshatalov.com/",
-    // repo: "https://github.com/Nikoobox/nikolayshatalov"
+    repo: "https://github.com/Nikoobox/nikolayshatalov"
   }
 ];
