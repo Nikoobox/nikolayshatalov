@@ -66,28 +66,26 @@
                 .info-text{
                     margin-top:10px;
                     margin-bottom:40px;
-                    @media(max-width: 768px){
-                        text-align:justify;    
-                    }
+                    text-align:justify;    
                 }
                 a{
-                text-decoration:none;
-                color:white;
-                border: 2px white solid;
-                padding: 0.3rem 1.8rem;
-                text-decoration: none;
-                transition: ease 0.2s all;
-                font-size: 20px;
-                @media(max-width: 768px){
-                    text-align: center;
-                }
-                &:hover{
+                    text-decoration:none;
+                    color:white;
                     border: 2px white solid;
-                    background: white;
-                    color:$mainGreen;
-                    cursor:pointer;
+                    padding: 0.3rem 1.8rem;
+                    text-decoration: none;
+                    transition: ease 0.2s all;
+                    font-size: 20px;
+                    @media(max-width: 768px){
+                        text-align: center;
+                    }
+                    &:hover{
+                        border: 2px white solid;
+                        background: white;
+                        color:$mainGreen;
+                        cursor:pointer;
+                    }
                 }
-            }
             }
         }
     }
