@@ -56,7 +56,6 @@ button:focus {outline:0;}
       }
       .img_box{
         border-radius:12px 12px 0 0 ;
-          // overflow: hidden;
           height:200px;
           width:100%;
           .img{
@@ -86,15 +85,18 @@ button:focus {outline:0;}
             padding:20px 25px 20px;
             .card_header{
               font-weight:600;
-              font-size:24px;
+              font-size:28px;
               margin-bottom:5px;
             }
             .card_text{
               text-align: justify;
               font-weight:300;
+              font-size: 18px;
             }
             .card_tools_box{
+              font-weight:300;
               margin-top:15px;
+              font-size: 16px;
               display:flex;
               flex-wrap: wrap;
               
@@ -103,7 +105,7 @@ button:focus {outline:0;}
               }
               .card_tools{
                 margin-right:10px;
-                font-weight:700;
+                // font-weight:700;
               }
             }
         }
