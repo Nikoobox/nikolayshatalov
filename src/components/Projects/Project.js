@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { IoMdPhonePortrait, IoMdDesktop, IoMdLaptop } from "react-icons/io";
 
 export default class Test extends Component {
     
     render() {
-        const {name,img,tools,info,address, repo}=this.props.project;
+        const {name,img,tools,info,address, repo, responsive}=this.props.project;
 
         const isRepo = repo ? <a href={`${repo}`} rel='noopener noreferrer' target="_blank" className='repo_link'>
             <button>Repo</button>
@@ -31,12 +32,20 @@ export default class Test extends Component {
                                 </div>
                             </div>
                             <div className="links_box">
-                                <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
-                                    <button>Live Link</button>
-                                </a>
+                                <div className='links'>
+                                    <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
+                                        <button>Live Link</button>
+                                    </a>
 
-                                {isRepo}
-                                
+                                    {isRepo}
+                                </div>
+
+                                <div className='devices-box'>
+                                    {responsive ? <div className='dev'><IoMdPhonePortrait /></div> : '' }
+                                    <div className='dev'><IoMdLaptop /></div>
+                                    <div className='dev'><IoMdDesktop/></div>
+
+                                </div>
                             </div>
                         </div> 
                     </div>
