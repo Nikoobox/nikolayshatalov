@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import { IoMdPhonePortrait, IoMdDesktop, IoMdLaptop } from "react-icons/io";
-import mobile from './phone_blue.png';
-import laptop from './laptop_blue.png';
-import desktop from './desktop_blue.png';
-// import soccer from './SOCCER_PAGE.png';
 export default class Test extends Component {
     
     render() {
