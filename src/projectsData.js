@@ -13,7 +13,6 @@ export const projectsData = [
   {
     id: 2,
     name: "90 Plus",
-    // img: "./img/ninetyplus2.png",
     img: "./img/SOCCER_PAGE.png",
     tools: ["Node.js,", "Javascript,", "Express,", "HTML,", "CSS,", "D3.js,", "Firestore/Firebase"],
     info:
