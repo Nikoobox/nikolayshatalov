@@ -24,7 +24,6 @@ export const projectsData = [
   {
     id: 3,
     name: "Pomegranate",
-    img: "./img/pomegranate2.png",
     img: "./img/pom_site.png",
     tools: ["Node.js,", "Mongoose,", "Express,", "HTML,", "CSS,", "Javascript,", "React,","Redux"],
     info:
