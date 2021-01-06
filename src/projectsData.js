@@ -13,7 +13,8 @@ export const projectsData = [
   {
     id: 2,
     name: "90 Plus",
-    img: "./img/ninetyplus2.png",
+    // img: "./img/ninetyplus2.png",
+    img: "./img/SOCCER_PAGE.png",
     tools: ["Node.js,", "Javascript,", "Express,", "HTML,", "CSS,", "D3.js,", "Firestore/Firebase"],
     info:
       "An interactive soccer live score app using dynamic data and visualization",
@@ -25,6 +26,7 @@ export const projectsData = [
     id: 3,
     name: "Pomegranate",
     img: "./img/pomegranate2.png",
+    img: "./img/pom_site.png",
     tools: ["Node.js,", "Mongoose,", "Express,", "HTML,", "CSS,", "Javascript,", "React,","Redux"],
     info:
       "Web-app that generates unique recipes based on the ingredients from user’s kitchen",

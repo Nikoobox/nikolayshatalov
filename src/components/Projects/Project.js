@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { IoMdPhonePortrait, IoMdDesktop, IoMdLaptop } from "react-icons/io";
-
+import mobile from './phone_blue.png';
+import laptop from './laptop_blue.png';
+import desktop from './desktop_blue.png';
+// import soccer from './SOCCER_PAGE.png';
 export default class Test extends Component {
     
     render() {
@@ -44,7 +47,16 @@ export default class Test extends Component {
                                     {responsive ? <div className='dev'><IoMdPhonePortrait /></div> : '' }
                                     <div className='dev'><IoMdLaptop /></div>
                                     <div className='dev'><IoMdDesktop/></div>
-
+                                        
+                                        {/* <div className='devImg'>
+                                            <img src={mobile}/>  
+                                        </div> 
+                                <div className='devImg'>
+                                    <img src={laptop} />
+                                </div> 
+                                <div className='devImg'>
+                                    <img src={desktop} />
+                                </div>  */}
                                 </div>
                             </div>
                         </div> 
