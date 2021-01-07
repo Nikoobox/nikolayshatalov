@@ -16,7 +16,7 @@ export const projectsData = [
     img: "./img/SOCCER_PAGE.png",
     tools: ["Node.js,", "Javascript,", "Express,", "HTML,", "CSS,", "D3.js,", "Firestore/Firebase"],
     info:
-      "An interactive soccer live score app with dynamic data and visualization",
+      "An interactive soccer live scores app with dynamic data visualizations",
     address: "https://ninety-plus.herokuapp.com/",
     repo: "https://github.com/Nikoobox/ninetyplus",
     responsive: false
