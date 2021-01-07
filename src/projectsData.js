@@ -5,7 +5,7 @@ export const projectsData = [
     img: "./img/treecamp2.png",
     tools: ["Ruby,", "Rails,", "Javascript,", "React,", "Redux,", "PostgreSQL,", "AWS,", "Webpack,", "Google Maps API"],
     info:
-      "Web app with platform to search, book and review the most unique treehouses in a world.",
+      "Web app platform to search, book and review the most unique treehouses in a world.",
     address: "https://tree-camp.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/TreeCamp",
     responsive: false
@@ -16,7 +16,7 @@ export const projectsData = [
     img: "./img/SOCCER_PAGE.png",
     tools: ["Node.js,", "Javascript,", "Express,", "HTML,", "CSS,", "D3.js,", "Firestore/Firebase"],
     info:
-      "An interactive soccer live score app using dynamic data and visualization",
+      "An interactive soccer live score app with dynamic data and visualization",
     address: "https://ninety-plus.herokuapp.com/",
     repo: "https://github.com/Nikoobox/ninetyplus",
     responsive: false
@@ -27,7 +27,7 @@ export const projectsData = [
     img: "./img/pom_site.png",
     tools: ["Node.js,", "Mongoose,", "Express,", "HTML,", "CSS,", "Javascript,", "React,","Redux"],
     info:
-      "Web-app that generates unique recipes based on the ingredients from user’s kitchen",
+      "Web app that generates unique recipes based on the ingredients from user’s kitchen",
     address: "https://aapomegranate.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/ninetyplus",
     responsive: false
@@ -38,7 +38,7 @@ export const projectsData = [
     img: "./img/karenahuang.png",
     tools: ["HTML,", "CSS,", "Javascript,", "jQuery"],
     info:
-      "Website-portfolio for NYC based Graphic Designer and Art-Director working in beauty industry. Fully responsive.",
+      "Website portfolio for NYC-based Graphic Designer and Art-Director working in the beauty industry. Fully responsive.",
     address: "https://karenahuang.com/",
     repo: "https://github.com/Nikoobox//karenahuang",
     responsive: true
@@ -60,7 +60,7 @@ export const projectsData = [
     img: "./img/ds22.png",
     tools: ["HTML,", "CSS,", "Javascript"],
     info:
-      "The best online game in the world allows you to hunt for your most favorite beer",
+      "The best online game in the world. Allows you to hunt for your most favorite beer",
     address: "https://drunkensnake.online/",
     repo: "https://github.com/Nikoobox/drunkensnake",
     responsive: false
@@ -71,7 +71,7 @@ export const projectsData = [
     img: "./img/ns2.png",
     tools: ["React,","HTML,", "SASS,", "Javascript"],
     info:
-      "Fully responsive, functional, and minimalistic portfolio with beautiful interface",
+      "Fully responsive, functional portfolio with a beautiful and minimalistic interface",
     address: "https://nikolayshatalov.com/",
     repo: "https://github.com/Nikoobox/nikolayshatalov",
     responsive: true
