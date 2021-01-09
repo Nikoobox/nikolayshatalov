@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './contact.scss';
 import nsImg from './ns_img.jpg'
-import resume from '../../docs/nikolay_shatalov_resume.pdf';
+import resume from './nikolay_shatalov_resume_jan_2021.pdf';
+// import resume from '../../docs/nikolay_shatalov_resume_jan_2021.pdf';
 
 export default class Contact extends Component {
     render() {
@@ -26,10 +27,6 @@ export default class Contact extends Component {
                         </div> 
 
                     </div>
-
-                    {/* <div className='resume-box'> */}
-                        {/* <a href={resume} target="_blank" rel='noopener noreferrer'>Resume</a> */}
-                    {/* </div>   */}
                 
                 </div> 
                 <div className="row">
