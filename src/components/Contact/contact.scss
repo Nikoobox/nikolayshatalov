@@ -97,14 +97,21 @@
     .form-group{
         margin-bottom: 0;
     }
-
     .form-control{
         border:none;
-        margin-bottom:1%;
+        margin-bottom:3px;
+        padding:20px;
+        height:60px;
+        font-size:16px;
+        line-height:1;
         border-radius: 0;
         background:darken($mainGreen, 10%)!important ;
         color:$mainWhite!important;
     }
+    .form .form-control{
+        height:150px;
+    }
+
 
     .contact-button-box{
         text-align: center;
