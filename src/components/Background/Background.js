@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './background.scss';
 import { Link } from 'react-scroll';
-// import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-// import Img from './background_b.jpg';
-
 
 
 export default class Background extends Component {
+
+
     render() {
         return (
        

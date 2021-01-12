@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './contact.scss';
 import nsImg from './ns_img.jpg'
-import resume from './nikolay_shatalov_resume_jan_2021.pdf';
-// import resume from '../../docs/nikolay_shatalov_resume_jan_2021.pdf';
+import resume from './Resume_Nikolay Shatalov_1_21.pdf';
 
 export default class Contact extends Component {
     render() {
@@ -17,7 +16,6 @@ export default class Contact extends Component {
                         </div> 
                         <div className='info'>
                             <div className='info-text'>
-                            {/* I am a software engineer with a passion for React, Redux and frontend web development.  */}
                             When building an idea, a user’s experience is very important to me, so I strive to craft an interface that is innovative, visually appealing, and intuitive for everyone.
                             When I am not coding, you can find me cycling around NYC, running or mastering snowboarding tricks.
 
