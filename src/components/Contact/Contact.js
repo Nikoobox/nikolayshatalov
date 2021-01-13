@@ -10,18 +10,18 @@ export default class Contact extends Component {
             <section className="contact-section">
                 <div className="contact-title" id="contact-destination">Contact</div>
                 <div className='about-container'>
-                    <div className='about-box'>
-                        <div className='img-box'>
+                    <div className='about-box '>
+                        <div className='img-box anim' data-delay="0.2s">
                             <img src={nsImg} alt='Nikolay Shatalov'/>
                         </div> 
-                        <div className='info'>
+                        <div className='info anim' data-delay="0.4s">
                             <div className='info-text'>
                             When building an idea, a user’s experience is very important to me, so I strive to craft an interface that is innovative, visually appealing, and intuitive for everyone.
                             When I am not coding, you can find me cycling around NYC, running or mastering snowboarding tricks.
 
                             </div>
 
-                            <a href={resume} target="_blank" rel='noopener noreferrer'>Download My Resume</a>
+                            <a href={resume} target="_blank" rel='noopener noreferrer' className='anim' data-delay="0.8s">Download My Resume</a>
                         </div> 
 
                     </div>

@@ -41,6 +41,7 @@ button:focus {outline:0;}
       color:black;
       text-decoration: none;
       width:40%;
+
       @media(max-width: 1000px){
         width:100%;
       }
@@ -172,3 +173,19 @@ button:focus {outline:0;}
     }
   }
 }
+
+
+.anim{
+  opacity:0;
+}
+
+@keyframes anim1 {
+    from {
+      transform: translateY(+50px);
+      opacity: 0;
+    }
+    to  {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

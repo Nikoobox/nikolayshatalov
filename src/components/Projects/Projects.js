@@ -10,6 +10,50 @@ export default class Projects extends Component {
         projects:projectsData
     };
 
+    componentDidMount(){
+        // window.addEventListener('scroll', this.anim);
+        window.scrollTo(0,0);
+        window.addEventListener('scroll', (e)=>{
+            const window = e.currentTarget;
+
+            if (this.prev > window.scrollY) {
+                console.log("scrolling up");
+                // const elements = document.querySelectorAll('.anim');
+                // elements.forEach(ele=>{
+                //     ele.style.opacity=1;
+                // })
+            } else if (this.prev < window.scrollY) {
+                console.log("scrolling down");
+                this.anim();
+            }
+            this.prev = window.scrollY;
+        });
+    }
+
+
+    anim() {
+        const elements = document.querySelectorAll('.anim')
+        const options = {
+            root:null,
+            threshold: 1,
+            rootMargin: '-100px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0.2) {
+                    entry.target.style.animation = `anim1 0.6s ${entry.target.dataset.delay} forwards ease`
+                } 
+                // else {
+                //     entry.target.style.animation = 'none'
+                // }
+            })
+        }, options)
+
+        elements.forEach(element => {
+            observer.observe(element)
+        })
+    }
+
 
     render() {
         const{projects}=this.state;

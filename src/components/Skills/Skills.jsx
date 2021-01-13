@@ -12,7 +12,7 @@ class Skills extends React.Component {
         return (
             <div className='skills-container' id="skills-destination">
                 <div className='skills-title'>Skills</div>
-                <div className='skills-box'>
+                <div className='skills-box anim' data-delay="0s">
                     <div className='box'>
                         <SiJavascript className='skill-icon' />
                         <div className="skill-name">Javascript</div>

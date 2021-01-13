@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import './navbar.scss';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import classnames from "classnames";
-// import { Document } from 'react-pdf'
-// import resume from '../../docs/nikolay_shatalov_resume.pdf';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -48,19 +46,6 @@ export default class Navbar extends Component {
                     <li><Link href='/' className='nav-link' to="projects-destination" smooth={true} duration={1200}>Projects</Link></li>
 
                     <li><Link href='/' className='nav-link' to="contact-destination" smooth={true} duration={1200}>Contact</Link></li>
-
-                    {/* <li><a href={resume} className='nav-link' target="_blank" rel='noopener noreferrer'>Resume</a></li> */}
-
-                    {/* <li>
-                      <Document
-                        file='./nikolay_shatalov_resume.pdf' 
-                        className='nav-link' 
-                        to="contact-destination" 
-                        smooth={true} 
-                        duration={1200}>
-                        Contact
-                      </Document>
-                    </li> */}
 
                 </ul>  
             </nav>

@@ -71,7 +71,7 @@ export const projectsData = [
     img: "./img/ns2.png",
     tools: ["React,","HTML,", "SASS,", "Javascript"],
     info:
-      "Fully responsive, functional portfolio with a beautiful and minimalistic interface",
+      "Fully responsive, functional portfolio with a beautiful and minimalistic interface and smooth on scroll animation",
     address: "https://nikolayshatalov.com/",
     repo: "https://github.com/Nikoobox/nikolayshatalov",
     responsive: true

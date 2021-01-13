@@ -11,7 +11,7 @@ const Project = (props) => {
         </a> : '';
 
         return (
-            <div className="card_box fadeIn">
+            <div className="card_box anim" data-delay="0s">
                 <div className="card">
                     <div className='img_box'>
                         <img className="img" src={img} alt="" />
