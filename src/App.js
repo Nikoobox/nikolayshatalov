@@ -15,7 +15,7 @@ export default class App extends Component {
   componentDidMount() {
     // console.log('testing!')
     // let top = document.querySelector('.background')
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     scroll.scrollToTop();
     // window.scrollTop = 0;
     

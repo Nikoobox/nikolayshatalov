@@ -28,6 +28,15 @@ export default class Projects extends Component {
             }
             this.prev = window.scrollY;
         });
+
+        const skillsBox = document.querySelector('.skills-box')
+        // skillsBox.addEventListener("resize", function () {
+        if (window.innerWidth < 768){
+            skillsBox.classList.remove("anim");
+        }else{
+            skillsBox.classList.add("anim");
+        } 
+        // });
     }
 
 
