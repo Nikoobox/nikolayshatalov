@@ -11,13 +11,12 @@ export default class Projects extends Component {
     };
 
     componentDidMount(){
-        // window.addEventListener('scroll', this.anim);
         window.scrollTo(0,0);
         window.addEventListener('scroll', (e)=>{
             const window = e.currentTarget;
 
             if (this.prev > window.scrollY) {
-                console.log("scrolling up");
+                // console.log("scrolling up");
                 // const elements = document.querySelectorAll('.anim');
                 // elements.forEach(ele=>{
                 //     ele.style.opacity=1;
@@ -29,14 +28,13 @@ export default class Projects extends Component {
             this.prev = window.scrollY;
         });
 
-        const skillsBox = document.querySelector('.skills-box')
-        // skillsBox.addEventListener("resize", function () {
+        const skillsBox = document.querySelector('.skills-box');
+
         if (window.innerWidth < 768){
             skillsBox.classList.remove("anim");
         }else{
             skillsBox.classList.add("anim");
         } 
-        // });
     }
 
 
