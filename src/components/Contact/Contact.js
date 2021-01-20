@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './contact.scss';
 import nsImg from './ns_img.jpg'
-import resume from './Resume_Nikolay_Shatalov_1_21.pdf';
+import resume from './Nikolay_Shatalov_Resume_Jan.pdf';
 
 export default class Contact extends Component {
     render() {
