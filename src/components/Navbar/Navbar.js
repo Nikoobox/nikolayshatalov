@@ -37,7 +37,11 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className={classnames("nav-bar",{"nav-bar--hidden": !this.state.visible})}>
-                <a href="/" className="name" aria-label="homepage" duration={5000} onClick={()=>{scroll.scrollToTop()}}>NS</a>
+              {/* <div className="name-box"> */}
+                <a href="/" className="name" aria-label="homepage" duration={5000} onClick={() => { scroll.scrollToTop() }}><div className="logo-box"><img src="./img/logo.png"/></div></a>
+                
+              {/* </div>  */}
+            {/* <a href="/" className="name" aria-label="homepage" duration={5000} onClick={() => { scroll.scrollToTop() }}><div className="logo-box"><img src="./img/logo.png" /></div></a> */}
 
                 <ul className="nav-links">
 
