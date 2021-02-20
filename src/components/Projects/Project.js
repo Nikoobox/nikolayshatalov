@@ -19,11 +19,18 @@ const Project = (props) => {
                     </div>
                     <div className='card_content_box'>
                         <div className="card_content">
-                            <div className="card_header">{name}</div>
+                            <div className='card-header-box'>
+                                <div className="card_header">{name}</div>
+                                <div className='devices-box'>
+                                    {responsive ? <div className='dev'><IoMdPhonePortrait /></div> : ''}
+                                    <div className='dev'><IoMdLaptop /></div>
+                                    <div className='dev'><IoMdDesktop /></div>
+                                </div>
+                            </div> 
                             <div className="card_text">{info} 
                             </div>
                             <div className="card_tools_box">
-                                <span>Built with:</span> 
+                                {/* <span>Built with:</span>  */}
                                 {tools.map(tool =>
                                     <div className="card_tools" key={tool.toString()}>
                                         {tool}
@@ -40,12 +47,7 @@ const Project = (props) => {
                                 {isRepo}
                             </div>
 
-                            <div className='devices-box'>
-                                {responsive ? <div className='dev'><IoMdPhonePortrait /></div> : '' }
-                                <div className='dev'><IoMdLaptop /></div>
-                                <div className='dev'><IoMdDesktop/></div>
-                                    
-                            </div>
+                          
                         </div>
                     </div> 
                 </div>

@@ -74,6 +74,7 @@
                     text-decoration: none;
                     transition: ease 0.2s all;
                     font-size: 20px;
+                    border-radius:24px;
                     @media(max-width: 768px){
                         text-align: center;
                     }
@@ -125,6 +126,7 @@
             padding: 0.3rem 1.8rem;
             transition: ease-out 0.3s all;
             margin-top:4%;
+            border-radius:30px;
             &:hover{
                 border: $mainWhite solid 2px;
                 background: $mainWhite;

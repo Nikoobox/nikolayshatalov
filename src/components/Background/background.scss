@@ -36,6 +36,7 @@
         background: transparent;
         padding: 0.3rem 1.8rem;
         transition: ease 0.2s all;
+        border-radius: 30px;
         &:hover{
             border: $mainGreen solid 3px;
             background: $mainGreen;
