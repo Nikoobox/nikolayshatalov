@@ -8,7 +8,8 @@ export default class Navbar extends Component {
         super(props)
         this.state = {
           prevScrollpos: window.pageYOffset,
-          visible: true
+          visible: true,
+          darkBackground:true
         };
       }
 
@@ -24,6 +25,7 @@ export default class Navbar extends Component {
       handleScroll = () => {
         const { prevScrollpos } = this.state;
         const currentScrollPos = window.pageYOffset;
+        const winHeight = window.innerHeight;
         const visible = prevScrollpos > currentScrollPos;
         if (currentScrollPos>300){
           this.setState({
@@ -31,25 +33,54 @@ export default class Navbar extends Component {
             visible
           });
         }
-        
+        // console.log('win height',window.innerHeight )
+        // console.log('window pageofset', window.pageYOffset)
+        if (winHeight < currentScrollPos && this.state.darkBackground ){
+          // console.log('HERE YOU GOOOOO DDown......')
+          this.setState({
+            darkBackground: false
+          });
+        } else if (winHeight > currentScrollPos && !this.state.darkBackground) {
+          // console.log('HERE YOU GOOOOO UP')
+          this.setState({
+            darkBackground: true
+          });
+        }
       };
       
     render() {
         return (
             <nav className={classnames("nav-bar",{"nav-bar--hidden": !this.state.visible})}>
-              {/* <div className="name-box"> */}
                 <a href="/" className="name" aria-label="homepage" duration={5000} onClick={() => { scroll.scrollToTop() }}><div className="logo-box"><img src="./img/logo.png" alt='my-logo'/></div></a>
-                
-              {/* </div>  */}
-            {/* <a href="/" className="name" aria-label="homepage" duration={5000} onClick={() => { scroll.scrollToTop() }}><div className="logo-box"><img src="./img/logo.png" /></div></a> */}
 
                 <ul className="nav-links">
 
-                    <li><Link href='/' className='nav-link' to="skills-destination" smooth={true} duration={1200}>Skills</Link></li>
+                    <li><Link 
+                      href='/' 
+                      className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`} 
+                      to="skills-destination" 
+                      smooth={true} 
+                      duration={1200}>
+                      Skills
+                    </Link></li>
 
-                    <li><Link href='/' className='nav-link' to="projects-destination" smooth={true} duration={1200}>Projects</Link></li>
+                    <li><Link 
+                      href='/' 
+                      className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`} 
+                      to="projects-destination" 
+                      smooth={true} 
+                      duration={1200}>
+                      Projects
+                    </Link></li>
 
-                    <li><Link href='/' className='nav-link' to="contact-destination" smooth={true} duration={1200}>Contact</Link></li>
+                    <li><Link 
+                      href='/' 
+                      className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`}  
+                      to="contact-destination" 
+                      smooth={true} 
+                      duration={1200}>
+                      Contact
+                    </Link></li>
 
                 </ul>  
             </nav>

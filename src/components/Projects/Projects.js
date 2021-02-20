@@ -22,7 +22,7 @@ export default class Projects extends Component {
                 //     ele.style.opacity=1;
                 // })
             } else if (this.prev < window.scrollY) {
-                console.log("scrolling down");
+                // console.log("scrolling down");
                 this.anim();
             }
             this.prev = window.scrollY;
