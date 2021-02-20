@@ -47,7 +47,7 @@ export const projectsData = [
     id: 5,
     name: "Cyberaction Samara",
     img: "./img/ca.png",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrtap"],
+    tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     info:
       "The first and largest Virtual Reality Gaming Arena located in Samara, Russia. Fully responsive.",
     address: "https://cyberactionsamara.ru/",
