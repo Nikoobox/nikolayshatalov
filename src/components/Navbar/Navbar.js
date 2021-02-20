@@ -27,25 +27,34 @@ export default class Navbar extends Component {
         const currentScrollPos = window.pageYOffset;
         const winHeight = window.innerHeight;
         const visible = prevScrollpos > currentScrollPos;
+        const bottomDarkSection = document.querySelector(".contact-section")
+     
+
         if (currentScrollPos>300){
           this.setState({
             prevScrollpos: currentScrollPos,
             visible
           });
         }
-        // console.log('win height',window.innerHeight )
-        // console.log('window pageofset', window.pageYOffset)
+        //changing links color when enter top dark background
         if (winHeight < currentScrollPos && this.state.darkBackground ){
-          // console.log('HERE YOU GOOOOO DDown......')
+          console.log('down')
           this.setState({
             darkBackground: false
           });
         } else if (winHeight > currentScrollPos && !this.state.darkBackground) {
-          // console.log('HERE YOU GOOOOO UP')
+          console.log('up!')
           this.setState({
             darkBackground: true
           });
         }
+        // changing links color to white when enter bottom dark background
+        if (currentScrollPos > bottomDarkSection.offsetTop && !this.state.darkBackground) {
+          console.log('down')
+          this.setState({
+            darkBackground: true
+          });
+        } 
       };
       
     render() {
