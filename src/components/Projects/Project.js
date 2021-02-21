@@ -16,6 +16,16 @@ const Project = (props) => {
                     <div className='img_box'>
                         <img className="img" src={img} alt="" />
                         <div className="overlay"></div>
+                        <div className='content'>
+                            <div className="links_box_large">
+                                <div className='links'>
+                                    <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
+                                        <button>Live Link</button>
+                                    </a>
+                                    {isRepo}
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                     <div className='card_content_box'>
                         <div className="card_content">
@@ -43,11 +53,8 @@ const Project = (props) => {
                                 <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
                                     <button>Live Link</button>
                                 </a>
-
                                 {isRepo}
                             </div>
-
-                          
                         </div>
                     </div> 
                 </div>
