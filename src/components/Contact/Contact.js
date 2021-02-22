@@ -11,7 +11,7 @@ export default class Contact extends Component {
 
         return (
             <>
-            <div className='wave' style={{ width: `100%` }}>
+            <div className='wave'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" stroke='transparent' strokeWidth='0px'><path fill="#1a394d" fillOpacity="1" d="M0,256L80,250.7C160,245,320,235,480,208C640,181,800,139,960,112C1120,85,1280,75,1360,69.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             </div> 
             <section className="contact-section">
