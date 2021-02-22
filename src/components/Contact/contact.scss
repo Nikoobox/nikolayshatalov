@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
 .contact-section{
+    
     background: $mainGreen;
     padding-bottom: 10%;
     position:relative;
@@ -13,7 +14,7 @@
         width: 100%;
         overflow: hidden;
         line-height: 0;
-        z-index:1000;
+        // z-index:1000;
         transform: rotate(180deg);
         svg{
             position: relative;
@@ -45,7 +46,7 @@
     .contact-title{
         color:$mainWhite;
         padding-bottom: 5%;
-        padding-top:15%;
+        padding-top:25%;
     }
 
     .about-container{
