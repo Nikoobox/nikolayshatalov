@@ -1,7 +1,6 @@
 @import '../../index.scss';
 
 .skills-container{
-    // background: $mainBackground;
     padding: 0 100px;
     @media(min-width: 1200px){
         padding: 0 100px 0;
@@ -43,14 +42,11 @@
             .d3js{
                 width:70%;
                 padding:10px
-            //    height:80px;
-            //     width:80px; 
             }
             .skill-name{
                 margin-top:5px;
                 font-size:18px;
             }
-
         }
     }
 }
