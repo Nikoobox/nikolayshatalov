@@ -1,6 +1,9 @@
 @import '../../index.scss';
 
 .background{
+    border:0;
+    margin:0;
+    padding:0;
     #tsparticles{
     background: rgb(13, 29, 39);  
     width:100%;
