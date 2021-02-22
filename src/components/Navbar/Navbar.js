@@ -38,19 +38,19 @@ export default class Navbar extends Component {
         }
         //changing links color when enter top dark background
         if ((winHeight < currentScrollPos && this.state.darkBackground) && ((currentScrollPos-80) < bottomDarkSection.offsetTop)){
-          console.log('down')
+          // console.log('down')
           this.setState({
             darkBackground: false
           });
         } else if (winHeight > currentScrollPos && !this.state.darkBackground) {
-          console.log('up!')
+          // console.log('up!')
           this.setState({
             darkBackground: true
           });
         }
         // changing links color to white when enter bottom dark background
         if (((currentScrollPos + 80)> bottomDarkSection.offsetTop) && !this.state.darkBackground) {
-          console.log('down down', this.state.darkBackground)
+          // console.log('down down', this.state.darkBackground)
           this.setState({
             darkBackground: true
           });
