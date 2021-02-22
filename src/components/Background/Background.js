@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './background.scss';
 import { Link } from 'react-scroll';
 import Particles from 'react-particles-js';
-import waveImg from './wave.svg'
+// import waveImg from './wave.svg'
 
 export default class Background extends Component {
 
