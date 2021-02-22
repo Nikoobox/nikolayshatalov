@@ -37,7 +37,7 @@ export default class Navbar extends Component {
           });
         }
         //changing links color when enter top dark background
-        if (winHeight < currentScrollPos && this.state.darkBackground ){
+        if ((winHeight < currentScrollPos && this.state.darkBackground) && ((currentScrollPos-280) < bottomDarkSection.offsetTop)){
           console.log('down')
           this.setState({
             darkBackground: false
@@ -49,8 +49,8 @@ export default class Navbar extends Component {
           });
         }
         // changing links color to white when enter bottom dark background
-        if (currentScrollPos > bottomDarkSection.offsetTop && !this.state.darkBackground) {
-          console.log('down')
+        if (((currentScrollPos + 280)> bottomDarkSection.offsetTop) && !this.state.darkBackground) {
+          console.log('down down', this.state.darkBackground)
           this.setState({
             darkBackground: true
           });
