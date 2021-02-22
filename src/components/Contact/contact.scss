@@ -150,3 +150,15 @@
         }
     }
 }
+
+
+.wave{
+    margin:0;
+    border:0;
+    width:100%;
+    svg{
+        stroke-width: 0;
+        stroke:transparent;
+        display:block;
+    }
+}
