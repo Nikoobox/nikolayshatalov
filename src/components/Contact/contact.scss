@@ -147,7 +147,6 @@
         height:60px;
         font-size:18px;
         line-height:1;
-        // letter-spacing:0.5px;
         border-radius: 0;
         background:darken($mainGreen, 10%)!important ;
         color:$mainWhite!important;
@@ -177,16 +176,3 @@
         }
     }
 }
-
-
-// .wave{
-//     margin:0;
-//     border:0;
-//     width:100%;
-//     svg{
-//         stroke-width: 0;
-//         stroke:transparent;
-//         display:block;
-//     }
-// }
-
