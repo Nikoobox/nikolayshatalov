@@ -33,7 +33,8 @@ export default class Navbar extends Component {
         if (currentScrollPos>300){
           this.setState({
             prevScrollpos: currentScrollPos,
-            visible
+            visible,
+            sidebarShow:false
           });
         }
         //changing links color when enter top dark background
@@ -56,6 +57,7 @@ export default class Navbar extends Component {
           });
         } 
       };
+
       
     render() {
         return (
@@ -94,5 +96,7 @@ export default class Navbar extends Component {
                 </ul>  
             </nav>
         )
-    }
+
+      }
+  
 }
