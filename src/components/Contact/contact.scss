@@ -10,11 +10,9 @@
     .wave-bottom{
         position: absolute;
         left: 0;
-        // top:0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
-        // z-index:1000;
         transform: rotate(180deg);
         svg{
             position: relative;
@@ -134,7 +132,6 @@
     .contact-title{
         font-size: 2.5rem;
         text-align: center;
-        // padding-top: 10%;
         font-family: 'Open Sans', sans-serif;
     }
     .form-group{
