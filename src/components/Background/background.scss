@@ -71,9 +71,9 @@
         transition: ease 0.2s all;
         border-radius: 30px;
         &:hover{
-            border: $mainWhite solid 3px;
-            background: $mainWhite;
-            color:$mainGreen;
+            border: $teal solid 3px;
+            // background: $mainWhite;
+            color:$teal;
             text-decoration: none;
         }
     }

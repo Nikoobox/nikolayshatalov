@@ -74,7 +74,7 @@ li{
     width:0;
     height:8px;
     // background:#BD10E0;
-    background:#35c2a3;
+    background:$teal;
     transition: width 0.4s;
     z-index: -1;
     
@@ -116,6 +116,10 @@ li{
                     padding:0.5rem 0 0.5rem 1rem;
                     margin:0;
                     font-weight: 300;
+                    transition: all ease-out 0.2s;
+                    &:hover{
+                        color:$teal;
+                    }
                 }
                 .nav-link::after{
                     display:none;
