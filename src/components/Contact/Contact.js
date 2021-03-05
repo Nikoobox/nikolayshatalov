@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './contact.scss';
 import nsImg from './ns_img.jpg'
-import resume from './Nikolay_Shatalov_Resume_Frontend.pdf';
+import resume from './Nikolay_Shatalov_Resume_Frontend_Mar.pdf';
 
 export default class Contact extends Component {
 
 
 
     render() {
-        // stroke = 'transparent' strokeWidth = '0px'
   
         return (
             <>
