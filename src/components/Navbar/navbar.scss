@@ -11,6 +11,19 @@
     z-index: 999;
     display: flex;
     width: 100%;
+    @media(min-width: 1200px){
+        padding: 1.5rem 100px;
+    }
+    @media(min-width: 1600px){
+        padding: 1.5rem 250px;
+    }
+    // @media(max-width: 1000px){
+    //     padding: 1.5rem 20%;
+    // }
+    // @media(max-width: 768px){
+    //     width:100%;
+    //     padding: 0 1rem 100px;
+    // }
     .name{   
         .logo-box{
             width:75px;

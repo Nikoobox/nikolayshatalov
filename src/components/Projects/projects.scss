@@ -6,7 +6,6 @@ button:focus {outline:0;}
     text-align: center;
     padding:10% 10% 5%;
     font-family: 'Open Sans', sans-serif;
-    // background: $mainBackground;
     @media(max-width: 768px){
       padding:10% 10% 5%;
     }
@@ -14,7 +13,6 @@ button:focus {outline:0;}
 
 //PROJECTS INFO
 .projects{
-  // background: $mainBackground;
   padding: 0 30px 100px;
   width:100%;
   @media(min-width: 1200px){
@@ -27,7 +25,7 @@ button:focus {outline:0;}
     width:100%;
     padding: 0 20% 100px;
   }
-   @media(max-width: 768px){
+  @media(max-width: 768px){
     width:100%;
     padding: 0 1rem 100px;
   }
