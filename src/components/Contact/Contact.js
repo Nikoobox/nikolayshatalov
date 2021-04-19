@@ -36,8 +36,8 @@ export default class Contact extends Component {
                     </div>
 
                 </div>
-                <div className="row">
-                    <div className="col-10 col-md-6 mx-auto">
+                <div className="form-container">
+                    <div className="form-box">
                         <div className='lets-connect'>Say Hi</div>
                         <form className="contact-form" method="POST" action="https://formspree.io/nikoobox@gmail.com">
                             <div className="form-group">
