@@ -8,7 +8,8 @@ export const projectsData = [
       "Web app platform to search, book and review the most unique treehouses in a world.",
     address: "https://tree-camp.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/TreeCamp",
-    responsive: false
+    responsive: false,
+    completed: true
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const projectsData = [
       "An interactive soccer live scores app with dynamic data visualizations",
     address: "https://ninety-plus.herokuapp.com/",
     repo: "https://github.com/Nikoobox/ninetyplus",
-    responsive: false
+    responsive: false,
+    completed: true
   },
   {
     id: 3,
@@ -30,10 +32,23 @@ export const projectsData = [
       "Web app that generates unique recipes based on the ingredients from user’s kitchen",
     address: "https://aapomegranate.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/ninetyplus",
-    responsive: false
+    responsive: false,
+    completed: true
   },
   {
     id: 4,
+    name: "ECS Pool Panels",
+    img: "./img/ECS_Pool_Panels.png",
+    tools: ["React", "React Hooks", "HTML", "SASS", "Javascript",],
+    info:
+      "Long Island, NY based pool panels manufacturer and pool related products distributer (IN PROGRESS)",
+    address: "/",
+    repo: "https://github.com/Nikoobox/pool-panels",
+    responsive: true,
+    completed: false
+  },
+  {
+    id: 5,
     name: "Personal Portfolio",
     img: "./img/karenahuang.png",
     tools: ["HTML", "CSS", "Javascript", "jQuery"],
@@ -41,10 +56,11 @@ export const projectsData = [
       "Website portfolio for NYC-based Graphic Designer and Art-Director working in the beauty industry. Fully responsive.",
     address: "https://karenahuang.com/",
     repo: "https://github.com/Nikoobox//karenahuang",
-    responsive: true
+    responsive: true,
+    completed: true
   },
   {
-    id: 5,
+    id: 6,
     name: "Cyberaction Samara",
     img: "./img/ca.png",
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
@@ -52,10 +68,11 @@ export const projectsData = [
       "The first and largest Virtual Reality Gaming Arena located in Samara, Russia. Fully responsive.",
     address: "https://cyberactionsamara.ru/",
     repo: "https://github.com/Nikoobox/cyberaction",
-    responsive: true
+    responsive: true,
+    completed: true
   },
   {
-    id: 6,
+    id: 7,
     name: "Drunken Snake",
     img: "./img/ds22.png",
     tools: ["HTML", "CSS", "Javascript"],
@@ -63,10 +80,11 @@ export const projectsData = [
       "The best online game in the world. Allows you to hunt for your most favorite beer",
     address: "https://drunkensnake.online/",
     repo: "https://github.com/Nikoobox/drunkensnake",
-    responsive: false
+    responsive: false,
+    completed: true
   },
   {
-    id: 7,
+    id: 8,
     name: "Personal Website",
     img: "./img/ns2.png",
     tools: ["React","HTML", "SASS", "Javascript", "Particles.js"],
@@ -74,6 +92,7 @@ export const projectsData = [
       "Fully responsive, functional portfolio with a beautiful and minimalistic interface and smooth on scroll animation",
     address: "https://nikolayshatalov.com/",
     repo: "https://github.com/Nikoobox/nikolayshatalov",
-    responsive: true
+    responsive: true,
+    completed: true
   }
 ];
