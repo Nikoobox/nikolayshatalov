@@ -19,9 +19,6 @@ const Project = (props) => {
                         <div className='content'>
                             <div className="links_box_large">
                                 <div className='links'>
-                                    {/* <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
-                                        <button>Live Link</button>
-                                    </a> */}
                                     {completed?
                                         <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
                                             <button>Live Link</button>
@@ -57,7 +54,7 @@ const Project = (props) => {
                         <div className="links_box">
                             <div className='links'>
                                 <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
-                                    <button>Live Link</button>
+                                    {completed?<button>Live Link</button>:''}
                                 </a>
                                 {isRepo}
                             </div>

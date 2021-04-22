@@ -66,7 +66,7 @@ export const projectsData = [
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     info:
       "The first and largest Virtual Reality Gaming Arena located in Samara, Russia. Fully responsive.",
-    address: "https://cyberactionsamara.ru/",
+    address: "https://cyberaction-samara.ru/",
     repo: "https://github.com/Nikoobox/cyberaction",
     responsive: true,
     completed: true
