@@ -81,7 +81,7 @@ export const projectsData = [
     address: "https://drunkensnake.online/",
     repo: "https://github.com/Nikoobox/drunkensnake",
     responsive: false,
-    completed: true
+    completed: false
   },
   {
     id: 8,
