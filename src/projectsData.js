@@ -90,10 +90,10 @@ export const projectsData = [
     tools: ["HTML", "CSS", "Javascript"],
     info:
       "The best online game in the world. Allows you to hunt for your most favorite beer",
-    address: "https://drunkensnake.online/",
+    address: "https://nikoobox.github.io/drunkensnake/",
     repo: "https://github.com/Nikoobox/drunkensnake",
     responsive: false,
-    completed: false
+    completed: true
   },
   {
     id: 8,
