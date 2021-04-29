@@ -63,7 +63,7 @@ export const projectsData = [
     id: 5,
     name: "Personal Portfolio",
     img: "./img/karenahuangNew.png",
-    tools: ["React", "Hooks", "HTML", "SCSS", "Javascript", "Framer Motion", "Responsive Masonry"],
+    tools: ["React", "Hooks", "Javascript", "Framer Motion", "HTML", "SCSS", "Responsive Masonry"],
     info:
       "Website portfolio for NYC-based Graphic Designer and Art-Director working in the beauty industry. Fully responsive.",
     address: "https://karenahuang.com/",
