@@ -41,12 +41,12 @@ export default class Contact extends Component {
                         <div className='lets-connect'>Say Hi</div>
                         <form className="contact-form" method="POST" action="https://formspree.io/nikoobox@gmail.com">
                             <div className="form-group">
-                                <input type="text" name="name" className="form-control" placeholder="Name" required/>
+                                <input type="text" name="name" className="form-control first" placeholder="Name" required/>
                                 <input type="email" name="email" className="form-control" placeholder="Email@email.com" required/>
                                 <input type="text" name="subject" className="form-control" placeholder="Subject" required/>
                             </div>
                             <div className="form">
-                                <textarea name="message" className="form-control" cols="30" rows="7" placeholder="Message" required></textarea>
+                                <textarea name="message" className="form-control last" cols="30" rows="7" placeholder="Message" required></textarea>
                             </div>
                             <div className="form-group contact-button-box">
                                 <button className="contact-button" type="submit" value="Send">Send</button>

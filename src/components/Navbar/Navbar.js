@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './navbar.scss';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import classnames from "classnames";
+import { motion } from "framer-motion";
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -61,42 +62,46 @@ export default class Navbar extends Component {
       
     render() {
         return (
-            <nav className={classnames("nav-bar",{"nav-bar--hidden": !this.state.visible})}>
-                <a href="/" className="name" aria-label="homepage" duration={5000} onClick={() => { scroll.scrollToTop() }}><div className="logo-box"><img src="./img/logo.png" alt='my-logo'/></div></a>
+            <motion.div
+              className={classnames("nav-bar", { "nav-bar--hidden": !this.state.visible })}
+              initial={{ y: 0, opacity: 0 }}
+              animate={{ y: 20, opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
+            >
+        
+              <a href="/" className="name" aria-label="homepage" duration={5000} onClick={() => { scroll.scrollToTop() }}><div className="logo-box"><img src="./img/logo.png" alt='my-logo'/></div></a>
 
-                <ul className="nav-links">
+              <ul className="nav-links">
 
-                    <li><Link 
-                      href='/' 
-                      className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`} 
-                      to="skills-destination" 
-                      smooth={true} 
-                      duration={1200}>
-                      Skills
-                    </Link></li>
+                <li><Link 
+                  href='/' 
+                  className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`} 
+                  to="skills-destination" 
+                  smooth={true} 
+                  duration={1200}>
+                  Skills
+                </Link></li>
 
-                    <li><Link 
-                      href='/' 
-                      className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`} 
-                      to="projects-destination" 
-                      smooth={true} 
-                      duration={1200}>
-                      Projects
-                    </Link></li>
+                <li><Link 
+                  href='/' 
+                  className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`} 
+                  to="projects-destination" 
+                  smooth={true} 
+                  duration={1200}>
+                  Projects
+                </Link></li>
 
-                    <li><Link 
-                      href='/' 
-                      className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`}  
-                      to="contact-destination" 
-                      smooth={true} 
-                      duration={1200}>
-                      Contact
-                    </Link></li>
+                <li><Link 
+                  href='/' 
+                  className={`nav-link ${this.state.darkBackground ? '' : 'on-scroll-a'}`}  
+                  to="contact-destination" 
+                  smooth={true} 
+                  duration={1200}>
+                  Contact
+                </Link></li>
 
-                </ul>  
-            </nav>
+              </ul>  
+            </motion.div>
         )
-
       }
-  
 }

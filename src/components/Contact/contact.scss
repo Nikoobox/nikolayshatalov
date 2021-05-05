@@ -129,6 +129,12 @@
 
     .form-group{
         margin-bottom: 0;
+        .first{
+            border-radius: 16px 16px 0 0;
+        }
+        // .last{
+        //     border-radius: 0 0 16px 16px;
+        // }
     }
     .form-control{
         border:none;
@@ -141,10 +147,13 @@
         background:darken($mainGreen, 10%)!important ;
         color:$mainWhite!important;
     }
-    .form .form-control{
-        height:150px;
-    }
-
+    .form{
+        .form-control{
+            height:150px;
+            border-radius: 0 0 16px 16px;
+            resize: none;
+        }  
+    } 
 
     .contact-button-box{
         text-align: center;
