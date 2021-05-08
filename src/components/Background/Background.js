@@ -74,7 +74,7 @@ export default class Background extends Component {
                     transition={{ delay: 0.2, duration: 0.3, ease: "easeOut" }}
                 >
                 {/* <div className="background-box"> */}
-                    <div className="background-text">Hello, I am Nikolay Shatalov.<br/> NYC based software engineer with experience in React, Redux, JS, Ruby on Rails, and passion for frontend development</div>
+                    <div className="background-text">Hello, I am Nikolay Shatalov.<br/> NYC based software engineer with experience in React, Redux, JS, Ruby, Rails, and passion for frontend development</div>
                         <Link href='/' className='background-button' to="contact-destination" smooth={true} duration={1200}>Say Hi</Link>
                 </motion.div>
                 {/* </div> */}
