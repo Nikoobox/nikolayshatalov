@@ -61,11 +61,11 @@ export const projectsData = [
   // },
   {
     id: 5,
-    name: "Personal Portfolio",
+    name: "Karena Huang",
     img: "./img/karenahuangNew.png",
     tools: ["React", "Hooks", "Javascript", "Framer Motion", "HTML", "SCSS", "Responsive Masonry"],
     info:
-      "Website portfolio for NYC-based Graphic Designer and Art-Director working in the beauty industry. Fully responsive.",
+      "Website portfolio for NYC-based Graphic Designer and Art-Director working with packaging design, branding direction and events collateral",
     address: "https://karenahuang.com/",
     repo: "https://github.com/Nikoobox//karenahuang",
     responsive: true,
