@@ -99,7 +99,7 @@ export const projectsData = [
     id: 8,
     name: "Personal Website",
     img: "./img/ns2.png",
-    tools: ["React","HTML", "SCSS", "Javascript", "Particles.js"],
+    tools: ["React", "HTML", "SCSS", "Javascript", "Particles.js", "Framer Motion"],
     info:
       "Fully responsive, functional portfolio with a beautiful and minimalistic interface and smooth on scroll animation",
     address: "https://nikolayshatalov.com/",

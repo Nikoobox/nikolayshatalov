@@ -43,7 +43,7 @@ export default class Projects extends Component {
         const options = {
             root:null,
             threshold: 1,
-            rootMargin: '-100px'
+            rootMargin: '-75px'
         };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

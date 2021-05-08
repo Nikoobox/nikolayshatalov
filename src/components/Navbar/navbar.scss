@@ -33,7 +33,7 @@
 }
 
 .nav-bar--hidden {
-    top: -120px;
+    top: -100px;
 }
 
 li{
@@ -45,6 +45,9 @@ li{
         font-size: 1.4rem;
         font-weight: 600;
         letter-spacing: 0.5px;
+        @media(max-width: 768px){
+            font-size: 1.3rem;
+        }
         &:hover{
             color: $mainWhite;
         }
@@ -94,6 +97,8 @@ li{
     .nav-bar{
         background:darken( $mainGreen,10%);
         padding:0.3rem 1rem;
+        top:0;
+        position:fixed;
         .name{
             padding: 15px 0;  
             .logo-box{

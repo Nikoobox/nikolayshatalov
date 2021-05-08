@@ -43,7 +43,6 @@ const Project = (props) => {
                             <div className="card_text">{info} 
                             </div>
                             <div className="card_tools_box">
-                                {/* <span>Built with:</span>  */}
                                 {tools.map(tool =>
                                     <div className="card_tools" key={tool.toString()}>
                                         {tool}
