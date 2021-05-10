@@ -99,6 +99,9 @@ button:focus {outline:0;}
             align-items:center;
             justify-content: center;
             .links{
+              @media(max-width: 768px){
+                display:none;
+              }
               a{
                 text-decoration: none;
                 button{

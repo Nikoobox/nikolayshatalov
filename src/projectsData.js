@@ -15,7 +15,7 @@ export const projectsData = [
     id: 2,
     name: "90 Plus",
     img: "./img/SOCCER_PAGE.png",
-    tools: ["Node.js", "Javascript", "Express", "HTML", "SCSS", "D3.js", "Firestore/Firebase"],
+    tools: ["Node.js", "Javascript", "Express", "HTML", "SCSS", "D3.js", "Firestore"],
     info:
       "An interactive soccer live scores app with dynamic data visualizations",
     address: "https://ninety-plus.herokuapp.com/",
