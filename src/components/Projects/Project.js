@@ -4,7 +4,7 @@ import { IoMdPhonePortrait, IoMdDesktop, IoMdLaptop } from "react-icons/io";
 
 const Project = (props) => {
 
-        const {name,img,tools,info,address, repo, responsive, completed}=props.project;
+        const {name,img,tools,info,address, repo, responsive, showLink, showRepo}=props.project;
 
         const isRepo = repo ? <a href={`${repo}`} rel='noopener noreferrer' target="_blank" className='repo_link'>
             <button>Repo</button>
@@ -19,13 +19,13 @@ const Project = (props) => {
                         <div className='content'>
                             <div className="links_box_large">
                                 <div className='links'>
-                                    {completed?
+                                    {showLink?
                                         <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
                                             <button>Live Link</button>
                                         </a>:
                                         ''
                                     }
-                                    {isRepo}
+                                    {showRepo? isRepo: ''}
                                 </div>
                             </div>
                         </div> 
@@ -53,9 +53,9 @@ const Project = (props) => {
                         <div className="links_box">
                             <div className='links'>
                                 <a href={`${address}`} rel='noopener noreferrer' target="_blank" className='live_link'>
-                                    {completed?<button>Live Link</button>:''}
+                                    {showLink?<button>Live Link</button>:''}
                                 </a>
-                                {isRepo}
+                                {showRepo ? isRepo : ''}
                             </div>
                         </div>
                     </div> 

@@ -9,7 +9,8 @@ export const projectsData = [
     address: "https://tree-camp.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/TreeCamp",
     responsive: false,
-    completed: true
+    showLink: true,
+    showRepo: true,
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const projectsData = [
     address: "https://ninety-plus.herokuapp.com/",
     repo: "https://github.com/Nikoobox/ninetyplus",
     responsive: false,
-    completed: true
+    showLink: true,
+    showRepo: true,
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ export const projectsData = [
     address: "https://aapomegranate.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/ninetyplus",
     responsive: false,
-    completed: true
+    showLink: true,
+    showRepo: true,
   },
   {
     id: 4,
@@ -41,11 +44,12 @@ export const projectsData = [
     img: "./img/ECS_Pool_Panels.png",
     tools: ["React", "Hooks", "HTML", "SCSS", "Javascript",],
     info:
-      "Long Island, NY based pool panels manufacturer and pool related products distributer (IN PROGRESS)",
-    address: "/",
+      "Steel pool panels and custom design pools built with the steel of the highest quality.",
+    address: "https://ecspoolpanels.com/",
     repo: "https://github.com/Nikoobox/pool-panels",
     responsive: true,
-    completed: false
+    showLink: true,
+    showRepo: false,
   },
   // {
   //   id: 5,
@@ -57,7 +61,7 @@ export const projectsData = [
   //   address: "https://karenahuang.com/",
   //   repo: "https://github.com/Nikoobox//karenahuang",
   //   responsive: true,
-  //   completed: true
+  //   showLink: true
   // },
   {
     id: 5,
@@ -69,7 +73,8 @@ export const projectsData = [
     address: "https://karenahuang.com/",
     repo: "https://github.com/Nikoobox//karenahuang",
     responsive: true,
-    completed: true
+    showLink: true,
+    showRepo: false,
   },
   {
     id: 6,
@@ -81,7 +86,7 @@ export const projectsData = [
     address: "https://cyberaction-samara.ru/",
     repo: "https://github.com/Nikoobox/cyberaction",
     responsive: true,
-    completed: true
+    showLink: true
   },
   {
     id: 7,
@@ -93,7 +98,8 @@ export const projectsData = [
     address: "https://nikoobox.github.io/drunkensnake/",
     repo: "https://github.com/Nikoobox/drunkensnake",
     responsive: false,
-    completed: true
+    showLink: true,
+    showRepo: true,
   },
   {
     id: 8,
@@ -105,6 +111,7 @@ export const projectsData = [
     address: "https://nikolayshatalov.com/",
     repo: "https://github.com/Nikoobox/nikolayshatalov",
     responsive: true,
-    completed: true
+    showLink: true,
+    showRepo: true,
   }
 ];
