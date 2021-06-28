@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './contact.scss';
-import profileImg from './profile_img.jpg'
+import profilePic from './profile.jpg'
 import resume from './Nikolay_Shatalov_Resume_Frontend.pdf';
 
 export default class Contact extends Component {
@@ -21,11 +21,8 @@ export default class Contact extends Component {
                 <div className='about-container'>
                     <div className='about-box '>
                         <div className='img-box anim' data-delay="0.2s">
-                                <img src={profileImg} alt='Nikolay Shatalov profile picture' />
+                                <img src={profilePic} alt='Nikolay Shatalov profile picture' />
                         </div>
-                            {/* <div className='img-box'>
-                                <img src={nsImg} alt='Nikolay Shatalov' />
-                            </div> */}
                         
                         <div className='info anim' data-delay="0.4s">
                             <div className='info-text'>
