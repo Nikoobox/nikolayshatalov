@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './contact.scss';
-import nsImg from './ns_img_optimized.jpg'
+import profileImg from './profile_img.jpg'
 import resume from './Nikolay_Shatalov_Resume_Frontend.pdf';
 
 export default class Contact extends Component {
@@ -21,8 +21,12 @@ export default class Contact extends Component {
                 <div className='about-container'>
                     <div className='about-box '>
                         <div className='img-box anim' data-delay="0.2s">
-                            <img src={nsImg} alt='Nikolay Shatalov' />
+                                <img src={profileImg} alt='Nikolay Shatalov profile picture' />
                         </div>
+                            {/* <div className='img-box'>
+                                <img src={nsImg} alt='Nikolay Shatalov' />
+                            </div> */}
+                        
                         <div className='info anim' data-delay="0.4s">
                             <div className='info-text'>
                                 When building an idea, a user’s experience is very important to me, so I strive to craft an interface that is innovative, visually appealing, and intuitive for everyone.

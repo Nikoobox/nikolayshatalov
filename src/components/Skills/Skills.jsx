@@ -1,19 +1,14 @@
 import React from 'react'
 import './skills.scss';
-// import '../../../public/img/d3.svg';
 import { SiJavascript, SiReact, SiRedux, SiRuby, SiRails, SiHtml5, SiCss3, SiJquery, SiPostgresql, SiMongodb, SiFirebase, SiAmazonaws, SiBootstrap, SiWebpack } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
-import d3jsIcon from './d3js.png'
+import d3Icon from './d3Icon.png'
 
 class Skills extends React.Component {  
 
     render() {
 
         return (
-            <>
-                {/* <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d1d27" fill-opacity="1" d="M0,256L60,245.3C120,235,240,213,360,181.3C480,149,600,107,720,96C840,85,960,107,1080,101.3C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-                </div> */}
             <div className='skills-container' id="skills-destination">
                 <div className='skills-title'>Skills</div>
                 <div className='skills-box anim' data-delay="0s">
@@ -71,8 +66,7 @@ class Skills extends React.Component {
                         <div className="skill-name">AWS S3</div>
                     </div>
                     <div className='box'>
-                        <img src={d3jsIcon} alt="" className='d3js'/>
-                        {/* <img src='../../../public/img/d3js.png' alt="" /> */}
+                        <img src={d3Icon} alt="" className='d3Icon'/>
                         <div className="skill-name">D3.js</div>
                     </div>
                     <div className='box'>
@@ -87,7 +81,7 @@ class Skills extends React.Component {
                 </div>
               
             </div>
-            </>
+            
         )
     }
 }
