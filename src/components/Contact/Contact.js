@@ -21,7 +21,7 @@ export default class Contact extends Component {
                 <div className='about-container'>
                     <div className='about-box '>
                         <div className='img-box anim' data-delay="0.2s">
-                                <img src={profilePic} alt='Nikolay Shatalov profile picture' />
+                                <img src={profilePic} alt='profile picture' />
                         </div>
                         
                         <div className='info anim' data-delay="0.4s">
