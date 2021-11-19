@@ -81,7 +81,9 @@
         .info-text {
           margin-top: 10px;
           margin-bottom: 40px;
-          text-align: justify;
+          @media (max-width: 768px) {
+            text-align: center;
+          }
         }
         a {
           text-decoration: none;
