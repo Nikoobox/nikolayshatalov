@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
 
+import { bioData } from "../data/bioData";
+
 export default class Background extends Component {
   render() {
     return (
@@ -70,9 +72,8 @@ export default class Background extends Component {
           transition={{ delay: 0.2, duration: 0.3, ease: "easeOut" }}
         >
           <div className="background-text">
-            Hello, I am Nikolay Shatalov.
-            <br /> NYC based frontend developer with experience in React, Redux,
-            Javascript, React Native, Ruby, Rails, and more
+            {bioData.entrySection.hello}
+            <div>{bioData.entrySection.info}</div>
           </div>
           <Link
             href="/"

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./contact.scss";
 import profilePic from "./profile.jpg";
+import { bioData } from "../data/bioData";
 import resume from "./Nikolay_Shatalov_Resume_Frontend.pdf";
 
 export default class Contact extends Component {
@@ -31,13 +32,7 @@ export default class Contact extends Component {
               </div>
 
               <div className="info anim" data-delay="0.4s">
-                <div className="info-text">
-                  When building an idea, a user’s experience is very important
-                  to me, so I strive to craft an interface that is innovative,
-                  visually appealing, and intuitive for everyone. When I am not
-                  coding, you can find me cycling around NYC, running or
-                  mastering snowboarding tricks.
-                </div>
+                <div className="info-text">{bioData.contactSection}</div>
 
                 <a
                   href={resume}
