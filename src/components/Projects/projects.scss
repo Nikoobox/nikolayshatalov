@@ -74,14 +74,14 @@ button:focus {
             width: 100%;
             height: 260px;
             top: 0;
-            background: $mainGreen;
+            background: $mainBlue;
             opacity: 0.05;
             @media (max-width: 768px) {
               height: 240px;
             }
           }
           .content {
-            background: $mainGreen;
+            background: $mainBlue;
             color: white;
             border-radius: 16px;
             top: 0;

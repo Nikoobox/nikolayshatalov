@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 
 .contact-section {
-  background: $mainGreen;
+  background: $mainBlue;
   padding-bottom: 10%;
   position: relative;
   .wave-bottom {
@@ -100,7 +100,7 @@
           &:hover {
             border: 2px white solid;
             background: white;
-            color: $mainGreen;
+            color: $mainBlue;
             cursor: pointer;
           }
         }
@@ -125,7 +125,7 @@
         font-size: 2rem;
         margin-bottom: 10px;
         text-align: center;
-        color: darken($mainGreen, 10%);
+        color: darken($mainBlue, 10%);
       }
     }
   }
@@ -144,7 +144,7 @@
     font-size: 18px;
     line-height: 1;
     border-radius: 0;
-    background: darken($mainGreen, 10%) !important ;
+    background: darken($mainBlue, 10%) !important ;
     color: $mainWhite !important;
   }
   .form {
@@ -170,7 +170,7 @@
       &:hover {
         border: $mainWhite solid 2px;
         background: $mainWhite;
-        color: $mainGreen;
+        color: $mainBlue;
       }
     }
   }
