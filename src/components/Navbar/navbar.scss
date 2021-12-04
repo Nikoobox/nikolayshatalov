@@ -123,9 +123,6 @@ li {
           margin: 0;
           font-weight: 300;
           transition: all ease-out 0.2s;
-          &:hover {
-            color: $teal;
-          }
         }
         .nav-link::after {
           display: none;

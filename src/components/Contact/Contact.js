@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { HiDownload } from "react-icons/hi";
 import "./contact.scss";
 import profilePic from "./profile.jpg";
+import { bioData } from "../data/bioData";
 import resume from "./Nikolay_Shatalov_Resume_Frontend.pdf";
 
 const Contact = () => {
@@ -41,7 +42,6 @@ const Contact = () => {
             >
               <img src={profilePic} alt="profile" />
             </motion.div>
-
             <div className="info">
               <motion.div
                 className="info-text"
