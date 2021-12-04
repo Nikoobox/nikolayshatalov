@@ -6,6 +6,7 @@ import {
   SiRails,
   SiHtml5,
   SiCss3,
+  SiTypescript,
   //   SiJquery,
   //   SiPostgresql,
   SiMongodb,
@@ -34,19 +35,19 @@ export const SKILLS_DATA = [
     iconType: SiRedux,
   },
   {
-    name: "Material UI",
+    name: "Typescript",
     class: "skill-name",
-    iconType: SiMaterialUi,
-  },
-  {
-    name: "Ruby",
-    class: "skill-name",
-    iconType: SiRuby,
+    iconType: SiTypescript,
   },
   {
     name: "ReactNative",
     class: "skill-name",
     iconType: SiReact,
+  },
+  {
+    name: "Ruby",
+    class: "skill-name",
+    iconType: SiRuby,
   },
   {
     name: "Rails",
@@ -57,6 +58,11 @@ export const SKILLS_DATA = [
     name: "Node.js",
     class: "skill-name",
     iconType: IoLogoNodejs,
+  },
+  {
+    name: "Material UI",
+    class: "skill-name",
+    iconType: SiMaterialUi,
   },
   {
     name: "HTML5",
