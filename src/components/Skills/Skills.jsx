@@ -8,7 +8,7 @@ import { SKILLS_DATA } from "../data/SkillsData";
 import d3Icon from "./d3Icon.png";
 
 const Skills = () => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     // visible percentage before trigering
     threshold: 0.5,
   });
@@ -17,7 +17,7 @@ const Skills = () => {
     return SKILLS_DATA.map((skill, idx) => {
       const TechIcon = skill.iconType;
       return (
-        <Skill key={idx}>
+        <Skill key={idx} id={idx}>
           <TechIcon className="skill-icon" />
           <div className={skill.class}>{skill.name}</div>
         </Skill>
@@ -34,7 +34,6 @@ const Skills = () => {
           <motion.div
             ref={ref}
             className="box"
-            key={999}
             initial={{ y: 30, opacity: 0 }}
             animate={inView && { y: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
