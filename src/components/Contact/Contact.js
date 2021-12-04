@@ -6,7 +6,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
-import resume from "./Nikolay_Shatalov_Resume_Frontend.pdf";
+import resume from "./Nikolay_Shatalov_Resume.pdf";
 
 const Contact = () => {
   const { ref, inView } = useInView({
