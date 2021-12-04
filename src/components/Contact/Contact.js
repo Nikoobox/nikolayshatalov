@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HiDownload } from "react-icons/hi";
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
@@ -34,14 +35,9 @@ export default class Contact extends Component {
               <div className="info anim" data-delay="0.4s">
                 <div className="info-text">{bioData.contactSection}</div>
 
-                <a
-                  href={resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="anim"
-                  data-delay="0.8s"
-                >
-                  Download My Resume
+                <a href={resume} target="_blank" rel="noopener noreferrer">
+                  My Resume
+                  <HiDownload className="icon" />
                 </a>
               </div>
             </div>
