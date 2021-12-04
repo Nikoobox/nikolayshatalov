@@ -89,7 +89,7 @@
           text-decoration: none;
           color: white;
           border: 2px white solid;
-          padding: 0.5rem 3rem;
+          padding: 0.5rem 2rem;
           text-decoration: none;
           transition: ease 0.2s all;
           font-size: 20px;
@@ -102,6 +102,9 @@
             background: white;
             color: $mainBlue;
             cursor: pointer;
+          }
+          .icon {
+            margin-left: 6px;
           }
         }
       }

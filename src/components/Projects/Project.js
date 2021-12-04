@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView, InView } from "react-intersection-observer";
 import { IoMdPhonePortrait, IoMdDesktop, IoMdLaptop } from "react-icons/io";
 
 const Project = (props) => {
@@ -14,6 +16,11 @@ const Project = (props) => {
     showRepo,
   } = props.project;
 
+  const { ref, inView, entry } = useInView({
+    // visible percentage before trigering
+    threshold: 0.2,
+  });
+
   const isRepo = repo && (
     <a
       href={`${repo}`}
@@ -26,7 +33,14 @@ const Project = (props) => {
   );
 
   return (
-    <div className="card_box anim" data-delay="0s">
+    // <InView triggerOnce>
+    <motion.div
+      className="card_box"
+      ref={ref}
+      initial={{ y: 30, opacity: 0 }}
+      animate={inView && { y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="card">
         <div className="img_box">
           <img className="img" src={img} alt="" />
@@ -91,7 +105,8 @@ const Project = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
+    // </InView>
   );
 };
 

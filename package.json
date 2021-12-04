@@ -16,6 +16,7 @@
     "react-dom": "^16.13.1",
     "react-gsap": "^2.2.1",
     "react-icons": "^4.1.0",
+    "react-intersection-observer": "^8.32.5",
     "react-particles-js": "^3.4.1",
     "react-pdf": "^5.1.0",
     "react-router-dom": "^5.2.0",

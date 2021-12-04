@@ -246,35 +246,36 @@ button:focus {
   }
 }
 
-.anim {
-  opacity: 0;
-}
-@media (max-width: 768px) {
-  .skills-container {
-    .skills-box,
-    .anim {
-      opacity: 1;
-    }
-  }
-  @keyframes anim1 {
-    from {
-      transform: translateY(+50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-}
+// .anim {
+//   opacity: 0;
+// }
+// @media (max-width: 768px) {
+//   .skills-container {
+//     .skills-box {
+//       opacity: 1;
+//     }
+//     // .anim {
+//     // }
+//   }
+//   @keyframes anim1 {
+//     from {
+//       transform: translateY(+50px);
+//       opacity: 0;
+//     }
+//     to {
+//       transform: translateY(0);
+//       opacity: 1;
+//     }
+//   }
+// }
 
-@keyframes anim1 {
-  from {
-    transform: translateY(+50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+// @keyframes anim1 {
+//   from {
+//     transform: translateY(+50px);
+//     opacity: 0;
+//   }
+//   to {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
