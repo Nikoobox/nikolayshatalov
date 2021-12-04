@@ -61,7 +61,7 @@ const Contact = () => {
               >
                 <a href={resume} target="_blank" rel="noopener noreferrer">
                   My Resume
-                  <HiDownload className="icon" />
+                  <HiDownload style={{ marginLeft: "6px" }} />
                 </a>
               </motion.div>
             </div>
