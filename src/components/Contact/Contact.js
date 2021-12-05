@@ -2,10 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { HiDownload } from "react-icons/hi";
+import { IoPaperPlaneOutline } from "react-icons/io5";
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
-import resume from "./Nikolay_Shatalov_Resume_Frontend.pdf";
+import resume from "./Nikolay_Shatalov_Resume.pdf";
 
 const Contact = () => {
   const { ref, inView } = useInView({
@@ -50,21 +51,17 @@ const Contact = () => {
                 animate={inView && { y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
               >
-                When building an idea, a user’s experience is very important to
-                me, so I strive to craft an interface that is innovative,
-                visually appealing, and intuitive for everyone. When I am not
-                coding, you can find me cycling around NYC, running or mastering
-                snowboarding tricks.
+                {bioData.contactSection}
               </motion.div>
               <motion.div
                 ref={ref}
                 initial={{ y: 40, opacity: 0 }}
                 animate={inView && { y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               >
                 <a href={resume} target="_blank" rel="noopener noreferrer">
                   My Resume
-                  <HiDownload className="icon" />
+                  <HiDownload style={{ marginLeft: "6px" }} />
                 </a>
               </motion.div>
             </div>
@@ -113,7 +110,7 @@ const Contact = () => {
               </div>
               <div className="form-group contact-button-box">
                 <button className="contact-button" type="submit" value="Send">
-                  Send
+                  Send <IoPaperPlaneOutline style={{ marginLeft: "6px" }} />
                 </button>
               </div>
             </form>

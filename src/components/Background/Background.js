@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
 
+import { HiChevronDown } from "react-icons/hi";
 import { bioData } from "../data/bioData";
 
 export default class Background extends Component {
@@ -83,6 +84,7 @@ export default class Background extends Component {
             duration={1200}
           >
             Say Hi
+            <HiChevronDown style={{ marginLeft: "6px" }} />
           </Link>
         </motion.div>
 

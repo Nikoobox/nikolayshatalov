@@ -103,9 +103,6 @@
             color: $mainBlue;
             cursor: pointer;
           }
-          .icon {
-            margin-left: 6px;
-          }
         }
       }
     }
@@ -166,7 +163,7 @@
       border: solid $mainWhite 2px;
       font-size: 1.2rem;
       background: transparent;
-      padding: 0.5rem 3rem;
+      padding: 0.5rem 2.4rem 0.5rem 3rem;
       transition: ease-out 0.3s all;
       margin-top: 4%;
       border-radius: 30px;
