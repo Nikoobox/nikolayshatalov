@@ -132,6 +132,12 @@
 
   .form-group {
     margin-bottom: 0;
+    input:focus {
+      outline: none;
+    }
+    textarea {
+      outline: none;
+    }
     .first {
       border-radius: 16px 16px 0 0;
     }
@@ -159,14 +165,19 @@
     text-align: center;
     .contact-button {
       line-height: 1.8rem;
-      color: $mainWhite;
-      border: solid $mainWhite 2px;
+      color: $mainGrey;
+      border: solid $mainGrey 2px;
       font-size: 1.2rem;
       background: transparent;
       padding: 0.5rem 2.4rem 0.5rem 3rem;
       transition: ease-out 0.3s all;
       margin-top: 4%;
       border-radius: 30px;
+    }
+    .active-btn {
+      color: $mainWhite;
+      border: solid $mainWhite 2px;
+      transition: ease-out 0.3s all;
       &:hover {
         border: $mainWhite solid 2px;
         background: $mainWhite;

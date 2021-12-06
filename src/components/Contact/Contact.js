@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { HiDownload } from "react-icons/hi";
 import { IoPaperPlaneOutline } from "react-icons/io5";
+
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
@@ -12,6 +13,20 @@ const Contact = () => {
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
+
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [isFilledForm, setIsFilledForm] = useState(false);
+
+  useEffect(() => {
+    if (userName === "" || email === "" || subject === "" || message === "") {
+      setIsFilledForm(false);
+    } else {
+      setIsFilledForm(true);
+    }
+  }, [userName, email, subject, message, isFilledForm]);
 
   return (
     <>
@@ -80,22 +95,25 @@ const Contact = () => {
                   type="text"
                   name="name"
                   className="form-control first"
-                  placeholder="Name"
-                  required
+                  placeholder="Name*"
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
                 />
                 <input
                   type="email"
                   name="email"
                   className="form-control"
-                  placeholder="Email@email.com"
-                  required
+                  placeholder="Email@example.com*"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                   type="text"
                   name="subject"
                   className="form-control"
-                  placeholder="Subject"
-                  required
+                  placeholder="Subject*"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
               <div className="form">
@@ -104,12 +122,20 @@ const Contact = () => {
                   className="form-control last"
                   cols="30"
                   rows="7"
-                  placeholder="Message"
-                  required
+                  placeholder="Message*"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
               <div className="form-group contact-button-box">
-                <button className="contact-button" type="submit" value="Send">
+                <button
+                  disabled={isFilledForm ? false : true}
+                  className={`contact-button ${
+                    isFilledForm ? "active-btn" : ""
+                  }`}
+                  type="submit"
+                  value="Send"
+                >
                   Send <IoPaperPlaneOutline style={{ marginLeft: "6px" }} />
                 </button>
               </div>
