@@ -12,7 +12,7 @@ import {
   SiMongodb,
   SiFirebase,
   //   SiAmazonaws,
-  SiBootstrap,
+  // SiBootstrap,
   //   SiWebpack,
   SiMaterialUi,
 } from "react-icons/si";
