@@ -84,9 +84,9 @@ export const SKILLS_DATA = [
     class: "skill-name",
     iconType: SiFirebase,
   },
-  {
-    name: "Bootstrap",
-    class: "skill-name",
-    iconType: SiBootstrap,
-  },
+  // {
+  //   name: "Bootstrap",
+  //   class: "skill-name",
+  //   iconType: SiBootstrap,
+  // },
 ];
