@@ -7,13 +7,10 @@ import {
   SiHtml5,
   SiCss3,
   SiTypescript,
-  //   SiJquery,
   //   SiPostgresql,
   SiMongodb,
   SiFirebase,
   //   SiAmazonaws,
-  // SiBootstrap,
-  //   SiWebpack,
   SiMaterialUi,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
