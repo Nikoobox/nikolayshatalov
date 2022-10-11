@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./projects.scss";
 import Project from "./Project";
 import { ProjectsData } from "../data/ProjectsData";
+import helperFunction from "./helper";
 
 export default class Projects extends Component {
   state = {
@@ -14,6 +15,7 @@ export default class Projects extends Component {
 
   render() {
     const { projects } = this.state;
+    console.log("new data is: ", helperFunction());
 
     return (
       <article>
