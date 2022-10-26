@@ -20,7 +20,6 @@ const Test = () => {
     <div className="test-container">
       <div className="test-wrapper">
         <div className="form-box">
-          {/* <div className="section-title">HELLO!</div> */}
           <form
             name="contact_version0"
             method="post"
@@ -48,6 +47,7 @@ const Test = () => {
               className="input-field"
               type="email"
               name="Email"
+              value={email}
               placeholder="Example@email.com*"
               onChange={(e) => setEmail(e.target.value)}
               // required
@@ -69,6 +69,7 @@ const Test = () => {
               name="Message"
               rows="4"
               placeholder="Message*"
+              value={message}
               onChange={(e) => setMessage(e.target.value)}
               // required
             ></textarea>
