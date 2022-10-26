@@ -39,7 +39,6 @@ const Test = () => {
               placeholder="Name*"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              // required
             />
             <div className="border-bottom" />
 
@@ -50,7 +49,6 @@ const Test = () => {
               value={email}
               placeholder="Example@email.com*"
               onChange={(e) => setEmail(e.target.value)}
-              // required
             />
             <div className="border-bottom" />
 
@@ -61,7 +59,6 @@ const Test = () => {
               placeholder="Subject*"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              // required
             />
             <div className="border-bottom" />
 
@@ -71,16 +68,10 @@ const Test = () => {
               placeholder="Message*"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              // required
             ></textarea>
             <div className="border-bottom" />
-            <button
-              type="submit"
-              // disabled={isFilled ? false : true}
-              // className={
-              //   isFilled ? "send-button-box active" : "send-button-box"
-              // }
-            >
+
+            <button type="submit">
               <div className="text">SEND</div>
             </button>
           </form>
