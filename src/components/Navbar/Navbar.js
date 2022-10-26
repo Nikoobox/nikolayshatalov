@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./navbar.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
+// import { Link as RouterLink } from "react-router-dom";
 import classnames from "classnames";
 import { motion } from "framer-motion";
 
@@ -55,7 +56,7 @@ export default class Navbar extends Component {
     }
     // changing links color to white when enter bottom dark background
     if (
-      currentScrollPos + 80 > bottomDarkSection.offsetTop &&
+      currentScrollPos + 80 > bottomDarkSection?.offsetTop &&
       !this.state.darkBackground
     ) {
       // console.log('down down', this.state.darkBackground)
@@ -131,6 +132,16 @@ export default class Navbar extends Component {
               Contact
             </Link>
           </li>
+          {/* <li>
+            <RouterLink
+              to="/test"
+              className={`nav-link ${
+                this.state.darkBackground ? "" : "on-scroll-a"
+              }`}
+            >
+              Test
+            </RouterLink>
+          </li> */}
         </ul>
       </motion.div>
     );
