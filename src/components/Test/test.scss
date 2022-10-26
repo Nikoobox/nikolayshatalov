@@ -1,0 +1,109 @@
+@import "../../index.scss";
+
+.test-container {
+  background-color: #00114b;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .test-wrapper {
+    margin-top: 125px;
+    width: 500px;
+    min-height: 500px;
+    background-color: white;
+    .form-box {
+      width: 80%;
+      padding: 4rem 3rem;
+      box-sizing: border-box;
+      @media (max-width: 768px) {
+        width: 85%;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        input {
+          background: transparent;
+          padding: 25px 5px 5px;
+          margin: 0;
+          outline: 0;
+          border: 0;
+          font-size: 1.1rem;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          &::placeholder {
+            font-size: 1rem;
+          }
+        }
+        .border-bottom {
+          height: 4px;
+          width: 100%;
+          margin-bottom: 10px;
+          background: "black";
+        }
+        textarea {
+          background: transparent;
+          outline: 0;
+          border: 0;
+          padding: 25px 5px 5px;
+          font-size: 1.1rem;
+          font-family: inherit;
+          &::placeholder {
+            font-size: 1rem;
+          }
+        }
+        .send-button-box {
+          background-color: white;
+          width: 140px;
+          font-weight: 300;
+          margin: 2rem auto 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          border: 2px solid black;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          font-family: "antique-light";
+          cursor: pointer;
+          box-shadow: 5px 5px 0 -2px white, 5px 5px 0 0px black;
+          transition: 0.2s all ease-out;
+          color: black;
+          @media (max-width: 768px) {
+            letter-spacing: 3px;
+            padding: 0 0.6rem;
+            margin: 2rem auto 0;
+            font-size: 1rem;
+            height: 40px;
+            box-shadow: 3px 3px 0 -2px white, 3px 3px 0 0px black;
+          }
+          &:hover {
+            box-shadow: 0 0 0 -2px white, 0 0 0 0px black;
+          }
+          .text {
+            text-decoration: none;
+            color: grey;
+          }
+          .icon {
+            color: grey;
+          }
+        }
+        .active {
+          background-color: "orange";
+          border: 2px solid black;
+          .text {
+            color: black;
+          }
+          .icon {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
