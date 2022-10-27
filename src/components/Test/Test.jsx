@@ -1,12 +1,12 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import FormEmailJs from "./FormEmailJs";
 import "./test.scss";
 
 const Test = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [subject, setSubject] = useState("");
+  // const [message, setMessage] = useState("");
   // const [isFilled, setIsFilled] = useState(false);
 
   // useEffect(() => {
