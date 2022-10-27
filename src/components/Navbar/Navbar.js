@@ -42,7 +42,7 @@ export default class Navbar extends Component {
     if (
       winHeight < currentScrollPos &&
       this.state.darkBackground &&
-      currentScrollPos - 80 < bottomDarkSection.offsetTop
+      currentScrollPos - 80 < bottomDarkSection?.offsetTop
     ) {
       // scrolling down
       this.setState({

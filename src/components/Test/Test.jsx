@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import FormEmailJs from "./FormEmailJs";
 import "./test.scss";
 
 const Test = () => {
@@ -19,7 +20,7 @@ const Test = () => {
   return (
     <div className="test-container">
       <div className="test-wrapper">
-        <div className="form-box">
+        {/* <div className="form-box">
           <form
             name="contact_version0"
             method="post"
@@ -76,6 +77,8 @@ const Test = () => {
             </button>
           </form>
         </div>
+        <br /> */}
+        <FormEmailJs />
       </div>
     </div>
   );
