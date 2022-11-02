@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Test from "./components/Test/Test";
+// import Test from "./components/Test/Test";
 import Footer from "./components/Footer/Footer";
 import Splash from "./components/Splash/Splash";
 import { animateScroll as scroll } from "react-scroll";
