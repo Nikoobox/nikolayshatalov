@@ -70,10 +70,11 @@
         }
         .info-text {
           margin-top: 10px;
-          font-weight: 200;
+          font-weight: 300;
           margin-bottom: 40px;
           @media (max-width: 768px) {
             text-align: center;
+            font-size: 22px;
           }
         }
         a {
