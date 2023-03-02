@@ -14,20 +14,6 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    svg {
-      position: relative;
-      display: block;
-      width: calc(142% + 1.3px);
-      height: 100px;
-      transform: rotateY(180deg);
-      @media (max-width: 767px) {
-        width: calc(100% + 1.3px);
-        height: 50px;
-      }
-      .shape-fill {
-        fill: #ffffff;
-      }
-    }
   }
 
   .contact-title {
@@ -35,6 +21,7 @@
     padding-bottom: 5%;
     padding-top: 25%;
     font-size: 2.5rem;
+    font-weight: 300;
     text-align: center;
     font-family: "Open Sans", sans-serif;
   }
@@ -80,6 +67,7 @@
         }
         .info-text {
           margin-top: 10px;
+          font-weight: 200;
           margin-bottom: 40px;
           @media (max-width: 768px) {
             text-align: center;
@@ -93,6 +81,7 @@
           text-decoration: none;
           transition: ease 0.2s all;
           font-size: 20px;
+          font-weight: 200;
           border-radius: 24px;
           @media (max-width: 768px) {
             text-align: center;
@@ -121,11 +110,12 @@
         padding-right: 15px;
       }
       .lets-connect {
-        font-weight: bold;
+        font-weight: 400;
         font-size: 2rem;
         margin-bottom: 10px;
         text-align: center;
         color: darken($mainBlue, 10%);
+        font-family: "Open Sans", sans-serif;
       }
     }
   }
@@ -142,6 +132,7 @@
     padding: 20px;
     height: 60px;
     font-size: 18px;
+    font-weight: 200;
     line-height: 1;
     border-radius: 0;
     background: darken($mainBlue, 10%) !important ;
@@ -162,6 +153,7 @@
       color: $mainGrey;
       border: solid $mainGrey 2px;
       font-size: 1.2rem;
+      font-weight: 200;
       background: transparent;
       padding: 0.5rem 2.4rem 0.5rem 3rem;
       transition: ease-out 0.3s all;

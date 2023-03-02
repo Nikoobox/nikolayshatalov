@@ -3,6 +3,7 @@ import "./background.scss";
 import { Link } from "react-scroll";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
+import Wave from "react-wavify";
 
 import { HiChevronDown } from "react-icons/hi";
 import { bioData } from "../data/bioData";
@@ -32,7 +33,6 @@ export default class Background extends Component {
               size: {
                 random: true,
                 value: 4,
-                // "color": "#3CA9D1",
               },
               color: {
                 value: ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363"],
@@ -89,17 +89,16 @@ export default class Background extends Component {
         </motion.div>
 
         <div className="wave">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              className="shape-fill"
-            ></path>
-          </svg>
+          <Wave
+            fill="#0d1d27"
+            paused={false}
+            options={{
+              height: 50,
+              amplitude: 50,
+              speed: 0.1,
+              points: 4,
+            }}
+          />
         </div>
       </section>
     );
