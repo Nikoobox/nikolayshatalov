@@ -40,10 +40,8 @@ li {
   display: inline-block;
   a {
     text-decoration: none;
-    display: inline-block;
     color: $mainWhite;
     font-size: 1.4rem;
-    font-weight: 600;
     letter-spacing: 0.5px;
     @media (max-width: 768px) {
       font-size: 1.2rem;
@@ -54,6 +52,7 @@ li {
   }
   .on-scroll-a {
     color: $mainBlue;
+    font-weight: 400;
     &:hover {
       color: $mainBlue;
       @media (max-width: 768px) {
@@ -70,6 +69,7 @@ li {
     position: relative;
     padding: 0;
     margin: 0.5rem 0 0 2rem;
+    font-weight: 400;
   }
 }
 
@@ -121,7 +121,7 @@ li {
         .nav-link {
           padding: 0.5rem 0 0.5rem 1rem;
           margin: 0;
-          font-weight: 300;
+          font-weight: 400;
           transition: all ease-out 0.2s;
         }
         .nav-link::after {
@@ -135,7 +135,7 @@ li {
   }
   li {
     a {
-      font-weight: 300;
+      font-weight: 400;
       color: $mainWhite;
       &:hover {
         color: $mainWhite;
