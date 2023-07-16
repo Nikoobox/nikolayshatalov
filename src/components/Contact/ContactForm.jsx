@@ -7,7 +7,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 const ContactFormWithEmailJs = () => {
   const [isErrorWhenFormSent, setIsErrorWhenFormSent] = useState(false);
   const options = {
-    position: "top-center",
+    position: "bottom-center",
     style: {
       backgroundColor: isErrorWhenFormSent ? "#f44336" : "#388e3c",
     },
