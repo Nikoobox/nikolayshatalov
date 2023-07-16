@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -7,11 +7,9 @@ import {
   HiOutlineDocumentText,
   HiOutlineExternalLink,
 } from "react-icons/hi";
-import { IoPaperPlaneOutline } from "react-icons/io5";
 import Wave from "react-wavify";
 
 import ContactForm from "./ContactForm";
-
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
@@ -24,20 +22,7 @@ const Contact = () => {
     threshold: 0.2,
   });
 
-  const [userName, setUserName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [isFilledForm, setIsFilledForm] = useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
-
-  useEffect(() => {
-    if (userName === "" || email === "" || subject === "" || message === "") {
-      setIsFilledForm(false);
-    } else {
-      setIsFilledForm(true);
-    }
-  }, [userName, email, subject, message, isFilledForm]);
 
   return (
     <>
