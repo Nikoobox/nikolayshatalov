@@ -5,21 +5,22 @@
   margin: 0;
   padding: 0;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: -2px;
   #tsparticles {
     background: #0d1d27;
     width: 100%;
     height: 100vh;
   }
-  .wave {
-    position: absolute;
-    top: calc(100vh - 2px);
-    left: -2px;
-    width: calc(100% + 4px);
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
+}
+.wave {
+  z-index: -1;
+  width: "100%";
+  margin-bottom: -2px;
+  margin-left: -1px;
+  min-width: "100%";
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .background-box {
@@ -43,9 +44,7 @@
     transition: ease 0.2s all;
     border-radius: 30px;
     &:hover {
-      background: $mainWhite;
       text-decoration: none;
-      color: $mainBlue;
     }
   }
   .background-text {

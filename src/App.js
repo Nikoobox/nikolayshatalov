@@ -19,7 +19,6 @@ export default class App extends Component {
           <Route path="/" element={<Splash />} />
           {/* <Route path="/test" element={<Test />} /> */}
         </Routes>
-
         <Footer />
       </>
     );

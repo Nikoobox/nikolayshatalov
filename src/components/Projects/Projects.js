@@ -15,7 +15,6 @@ export default class Projects extends Component {
 
   render() {
     const { projects } = this.state;
-    console.log("new data is: ", helperFunction());
 
     return (
       <article>
