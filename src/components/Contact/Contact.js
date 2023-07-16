@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { HiDownload, HiOutlineDocumentDuplicate } from "react-icons/hi";
+import {
+  HiDownload,
+  HiOutlineDocumentDownload,
+  HiOutlineDocumentText,
+  HiOutlineExternalLink,
+} from "react-icons/hi";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import Wave from "react-wavify";
 
@@ -92,7 +97,7 @@ const Contact = () => {
                   onClick={() => setIsOpen(true)}
                 >
                   View My Resume
-                  <HiOutlineDocumentDuplicate style={{ marginLeft: "6px" }} />
+                  <HiOutlineDocumentText style={{ marginLeft: "6px" }} />
                 </button>
               </motion.div>
             </div>
@@ -166,14 +171,23 @@ const Contact = () => {
         renderTitle={() => (
           <div>
             <a
-              className="resume-link"
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
               download="Nikolay_Shatalov_frontend_developer_resume.pdf"
             >
               Download
-              <HiDownload style={{ marginLeft: "4px" }} />
+              <HiOutlineDocumentDownload style={{ marginLeft: "4px" }} />
+            </a>
+
+            <a
+              className="resume-link-browser"
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View in browser
+              <HiOutlineExternalLink style={{ marginLeft: "4px" }} />
             </a>
           </div>
         )}
