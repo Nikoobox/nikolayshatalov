@@ -171,7 +171,6 @@ const Contact = () => {
         renderTitle={() => (
           <div>
             <a
-              // className="resume-link"
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
