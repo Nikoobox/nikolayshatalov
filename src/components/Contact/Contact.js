@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { HiDownload } from "react-icons/hi";
+import { HiDownload, HiOutlineDocumentDuplicate } from "react-icons/hi";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import Wave from "react-wavify";
 
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
-import resume from "./Nikolay_Shatalov_Resume.pdf";
+import resume from "./Nikolay_Shatalov_july_2023.pdf";
+import MyModal from "../Modal/Modal";
+import PdfViewer from "../PdfViewer/PdfViewer";
 
 const Contact = () => {
   const { ref, inView } = useInView({
@@ -20,6 +22,7 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [isFilledForm, setIsFilledForm] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   useEffect(() => {
     if (userName === "" || email === "" || subject === "" || message === "") {
@@ -74,10 +77,23 @@ const Contact = () => {
                 animate={inView && { y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               >
-                <a href={resume} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Nikolay_Shatalov_frontend_developer_resume.pdf"
+                >
                   My Resume
                   <HiDownload style={{ marginLeft: "6px" }} />
                 </a>
+
+                <button
+                  className="modal-button"
+                  onClick={() => setIsOpen(true)}
+                >
+                  View My Resume
+                  <HiOutlineDocumentDuplicate style={{ marginLeft: "6px" }} />
+                </button>
               </motion.div>
             </div>
           </div>
@@ -143,6 +159,27 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <MyModal
+        open={isOpen}
+        setOpen={setIsOpen}
+        renderTitle={() => (
+          <div>
+            <a
+              className="resume-link"
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Nikolay_Shatalov_frontend_developer_resume.pdf"
+            >
+              Download
+              <HiDownload style={{ marginLeft: "4px" }} />
+            </a>
+          </div>
+        )}
+      >
+        <PdfViewer />
+      </MyModal>
     </>
   );
 };

@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import "./background.scss";
+import React from "react";
 import { Link } from "react-scroll";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
 import Wave from "react-wavify";
-
 import { HiChevronDown } from "react-icons/hi";
+
+import "./background.scss";
 import { bioData } from "../data/bioData";
 
-export default class Background extends Component {
-  render() {
-    return (
-      <section className="background">
+const Background = () => {
+  return (
+    <>
+      <div className="background">
         <Particles
           params={{
             particles: {
@@ -87,20 +87,21 @@ export default class Background extends Component {
             <HiChevronDown style={{ marginLeft: "6px" }} />
           </Link>
         </motion.div>
+      </div>
+      <div className="wave">
+        <Wave
+          fill="#0d1d27"
+          paused={false}
+          options={{
+            height: 50,
+            amplitude: 50,
+            speed: 0.1,
+            points: 4,
+          }}
+        />
+      </div>
+    </>
+  );
+};
 
-        <div className="wave">
-          <Wave
-            fill="#0d1d27"
-            paused={false}
-            options={{
-              height: 50,
-              amplitude: 50,
-              speed: 0.1,
-              points: 4,
-            }}
-          />
-        </div>
-      </section>
-    );
-  }
-}
+export default Background;
