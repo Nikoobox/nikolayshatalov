@@ -5,6 +5,7 @@ import {
   HiDownload,
   HiOutlineDocumentDownload,
   HiOutlineDocumentText,
+  HiOutlineExternalLink,
 } from "react-icons/hi";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import Wave from "react-wavify";
@@ -170,7 +171,7 @@ const Contact = () => {
         renderTitle={() => (
           <div>
             <a
-              className="resume-link"
+              // className="resume-link"
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
@@ -178,6 +179,16 @@ const Contact = () => {
             >
               Download
               <HiOutlineDocumentDownload style={{ marginLeft: "4px" }} />
+            </a>
+
+            <a
+              className="resume-link-browser"
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View in browser
+              <HiOutlineExternalLink style={{ marginLeft: "4px" }} />
             </a>
           </div>
         )}
