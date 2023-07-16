@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./navbar.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
-// import { Link as RouterLink } from "react-router-dom";
 import classnames from "classnames";
 import { motion } from "framer-motion";
+
+import "./navbar.scss";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -132,16 +132,6 @@ export default class Navbar extends Component {
               Contact
             </Link>
           </li>
-          {/* <li>
-            <RouterLink
-              to="/test"
-              className={`nav-link ${
-                this.state.darkBackground ? "" : "on-scroll-a"
-              }`}
-            >
-              Test
-            </RouterLink>
-          </li> */}
         </ul>
       </motion.div>
     );

@@ -10,6 +10,8 @@ import {
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import Wave from "react-wavify";
 
+import ContactForm from "./ContactForm";
+
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
@@ -82,6 +84,7 @@ const Contact = () => {
                 animate={inView && { y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               >
+                {/* on smaller screens pdf is downloaded on click */}
                 <a
                   href={resume}
                   target="_blank"
@@ -91,7 +94,7 @@ const Contact = () => {
                   My Resume
                   <HiDownload style={{ marginLeft: "6px" }} />
                 </a>
-
+                {/*  on larger screens modal opens */}
                 <button
                   className="modal-button"
                   onClick={() => setIsOpen(true)}
@@ -103,66 +106,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="form-container">
-          <div className="form-box">
-            <div className="lets-connect">Say Hi</div>
-            <form
-              className="contact-form"
-              method="POST"
-              action="https://formspree.io/nikoobox@gmail.com"
-            >
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  className="form-control first"
-                  placeholder="Name*"
-                  value={userName}
-                  onChange={(e) => setUserName(e.target.value)}
-                />
-                <input
-                  type="email"
-                  name="email"
-                  className="form-control"
-                  placeholder="Email@example.com*"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                  type="text"
-                  name="subject"
-                  className="form-control"
-                  placeholder="Subject*"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                />
-              </div>
-              <div className="form">
-                <textarea
-                  name="message"
-                  className="form-control last"
-                  cols="30"
-                  rows="7"
-                  placeholder="Message*"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
-              </div>
-              <div className="form-group contact-button-box">
-                <button
-                  disabled={isFilledForm ? false : true}
-                  className={`contact-button ${
-                    isFilledForm ? "active-btn" : ""
-                  }`}
-                  type="submit"
-                  value="Send"
-                >
-                  Send <IoPaperPlaneOutline style={{ marginLeft: "6px" }} />
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+
+        <ContactForm />
       </section>
 
       <MyModal

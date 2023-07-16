@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar/Navbar";
-// import Test from "./components/Test/Test";
-import Footer from "./components/Footer/Footer";
-import Splash from "./components/Splash/Splash";
+import SnackbarProvider from "react-simple-snackbar";
 import { animateScroll as scroll } from "react-scroll";
 import { Route, Routes, Outlet } from "react-router-dom";
+
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Splash from "./components/Splash/Splash";
 
 export default class App extends Component {
   componentDidMount() {
@@ -15,10 +16,11 @@ export default class App extends Component {
     return (
       <>
         <Navbar />
-        <Routes element={<Outlet />}>
-          <Route path="/" element={<Splash />} />
-          {/* <Route path="/test" element={<Test />} /> */}
-        </Routes>
+        <SnackbarProvider>
+          <Routes element={<Outlet />}>
+            <Route path="/" element={<Splash />} />
+          </Routes>
+        </SnackbarProvider>
         <Footer />
       </>
     );
