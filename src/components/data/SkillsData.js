@@ -3,15 +3,13 @@ import {
   SiReact,
   SiRedux,
   SiRuby,
-  SiRails,
+  SiRubyonrails,
   SiHtml5,
   SiCss3,
   SiTypescript,
-  //   SiPostgresql,
   SiMongodb,
   SiFirebase,
-  //   SiAmazonaws,
-  SiMaterialUi,
+  SiMui,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 
@@ -49,7 +47,7 @@ export const SKILLS_DATA = [
   {
     name: "Rails",
     class: "skill-name",
-    iconType: SiRails,
+    iconType: SiRubyonrails,
   },
   {
     name: "Node.js",
@@ -59,7 +57,7 @@ export const SKILLS_DATA = [
   {
     name: "Material UI",
     class: "skill-name",
-    iconType: SiMaterialUi,
+    iconType: SiMui,
   },
   {
     name: "HTML5",
@@ -81,9 +79,4 @@ export const SKILLS_DATA = [
     class: "skill-name",
     iconType: SiFirebase,
   },
-  // {
-  //   name: "Bootstrap",
-  //   class: "skill-name",
-  //   iconType: SiBootstrap,
-  // },
 ];
