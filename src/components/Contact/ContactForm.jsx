@@ -23,8 +23,6 @@ const ContactFormWithEmailJs = () => {
   const [isFilledForm, setIsFilledForm] = useState(false);
   const [isSending, setIsSending] = useState(false);
 
-  console.log("process.env", process.env);
-
   useEffect(() => {
     if (
       userName !== "" &&
