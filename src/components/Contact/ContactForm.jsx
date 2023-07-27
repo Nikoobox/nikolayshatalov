@@ -36,6 +36,13 @@ const ContactFormWithEmailJs = () => {
     }
   }, [userName, userEmail, subject, message]);
 
+  useEffect(() => {
+    if (isErrorWhenFormSent) {
+      openSnackbar("Error. Please try again...");
+      setIsErrorWhenFormSent(false);
+    }
+  }, [isErrorWhenFormSent, openSnackbar]);
+
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -60,7 +67,6 @@ const ContactFormWithEmailJs = () => {
           console.log(error.text);
           setIsSending(false);
           setIsErrorWhenFormSent(true);
-          openSnackbar("Error. Please try again...");
         }
       );
   };
