@@ -145,7 +145,7 @@ const Project = (props) => {
             <HiOutlineExternalLink style={{ marginLeft: "4px" }} />
           </a>
         )}
-        {...(isMobile ? { height: "100vh" } : {})}
+        {...(isMobile ? { height: "100vh" } : { height: "85vh" })}
         // {...(isMobile ? { width: "100vw" } : {})}
       >
         <div className="modal-image-wrapper">
