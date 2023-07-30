@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { IoMdPhonePortrait, IoMdDesktop, IoMdLaptop } from "react-icons/io";
 
+const COLORS = ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363"];
+
 const Project = (props) => {
   const {
     name,
@@ -32,6 +34,12 @@ const Project = (props) => {
     </a>
   );
 
+  const getRandomColor = () => {
+    const index = Math.floor(Math.random() * COLORS.length);
+
+    return COLORS[index];
+  };
+
   return (
     <motion.div
       className="card_box"
@@ -43,8 +51,13 @@ const Project = (props) => {
       <div className="card">
         <div className="img_box">
           <img className="img" src={img} alt="" />
-          <div className="overlay"></div>
-          <div className="content">
+          <div className="overlay" />
+          <div
+            className="content"
+            style={{
+              border: `4px solid ${getRandomColor()}`,
+            }}
+          >
             <div className="links_box_large">
               <div className="links">
                 {showLink && (

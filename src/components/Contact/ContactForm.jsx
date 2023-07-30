@@ -38,6 +38,7 @@ const ContactFormWithEmailJs = () => {
 
   useEffect(() => {
     if (isErrorWhenFormSent) {
+      console.log("TEST", openSnackbar("Error. Please try again..."));
       openSnackbar("Error. Please try again...");
       setIsErrorWhenFormSent(false);
     }
