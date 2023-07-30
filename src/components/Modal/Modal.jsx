@@ -3,28 +3,30 @@ import Modal from "react-modal";
 import { HiOutlineX } from "react-icons/hi";
 import "./modal.scss";
 
-const customStyles = {
-  overlay: {
-    transition: "all 1s ease",
-    zIndex: 99999,
-    background: "#0d1d279e",
-  },
-  content: {
-    margin: "auto",
-    maxWidth: 720,
-    height: "95vh",
-    padding: 0,
-  },
-};
-
 const MyModal = ({
   open,
   setOpen,
   children,
   renderTitle,
   renderActionButtons,
+  height,
 }) => {
   const handleClose = () => setOpen(false);
+
+  const customStyles = {
+    overlay: {
+      transition: "all 1s ease",
+      zIndex: 99999,
+      background: "#0d1d279e",
+    },
+    content: {
+      margin: "auto",
+      maxWidth: 720,
+      height: height || "95vh",
+      padding: 0,
+    },
+  };
+
   return (
     <Modal
       isOpen={open}

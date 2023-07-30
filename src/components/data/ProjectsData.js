@@ -69,8 +69,9 @@ export const ProjectsData = [
     address: "https://tree-camp.herokuapp.com/#/",
     repo: "https://github.com/Nikoobox/TreeCamp",
     responsive: false,
-    showLink: true,
+    showLink: false,
     showRepo: true,
+    overview: "./img/overview/user_auth.gif",
   },
 
   {

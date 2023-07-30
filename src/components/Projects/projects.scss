@@ -90,6 +90,7 @@ button:focus {
             width: 100%;
             height: 100%;
             opacity: 0;
+            // opacity: 1;
             will-change: opacity;
             transition: all 0.3s ease-out;
             @media (max-width: 768px) {
@@ -120,6 +121,20 @@ button:focus {
                     &:hover {
                       color: white;
                     }
+                  }
+                }
+                .overview_link {
+                  background: transparent;
+                  padding: 0;
+                  border: 0;
+                  font-size: 22px;
+                  font-weight: 400;
+                  margin: 0 40px;
+                  color: rgb(172, 172, 172);
+                  border-bottom: 2px solid transparent;
+                  transition: all 0.3s ease;
+                  &:hover {
+                    color: white;
                   }
                 }
               }
@@ -246,4 +261,15 @@ button:focus {
     }
   }
 }
-//
+
+.modal-image-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100%;
+    margin: auto;
+  }
+}
