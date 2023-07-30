@@ -149,7 +149,7 @@ const Project = (props) => {
         // {...(isMobile ? { width: "100vw" } : {})}
       >
         <div className="modal-image-wrapper">
-          <img src={overview} />
+          <img src={overview} alt="" />
         </div>
       </MyModal>
     </>
