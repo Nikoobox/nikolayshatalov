@@ -71,7 +71,7 @@ export const ProjectsData = [
     responsive: false,
     showLink: false,
     showRepo: true,
-    overview: "./img/overview/user_auth.gif",
+    overview: "./img/overview/map_spots.gif",
   },
 
   {
