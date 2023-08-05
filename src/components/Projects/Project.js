@@ -130,7 +130,7 @@ const Project = (props) => {
                   {showLink && <button>Live Link</button>}
                 </a>
                 {showRepo && isRepo}
-                {isOverview}
+                {/* {isOverview} */}
               </div>
             </div>
           </div>
