@@ -118,6 +118,7 @@ const Project = (props) => {
                 ))}
               </div>
             </div>
+            {/* mobile view */}
             <div className="links_box">
               <div className="links">
                 <a
@@ -129,7 +130,7 @@ const Project = (props) => {
                   {showLink && <button>Live Link</button>}
                 </a>
                 {showRepo && isRepo}
-                {/* {isMobile && isOverview} */}
+                {isOverview}
               </div>
             </div>
           </div>
@@ -145,8 +146,10 @@ const Project = (props) => {
             <HiOutlineExternalLink style={{ marginLeft: "4px" }} />
           </a>
         )}
-        {...(isMobile ? { height: "100vh" } : { height: "85vh" })}
-        // {...(isMobile ? { width: "100vw" } : {})}
+        maxWidth="1024px"
+        height={isMobile && "100vh"}
+        width={isMobile && "100vw"}
+        isFullScreen={isMobile}
       >
         <div className="modal-image-wrapper">
           <img src={overview} alt="" />

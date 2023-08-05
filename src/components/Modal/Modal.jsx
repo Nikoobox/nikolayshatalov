@@ -10,6 +10,9 @@ const MyModal = ({
   renderTitle,
   renderActionButtons,
   height,
+  maxWidth,
+  width,
+  isFullScreen,
 }) => {
   const handleClose = () => setOpen(false);
 
@@ -21,9 +24,11 @@ const MyModal = ({
     },
     content: {
       margin: "auto",
-      maxWidth: 720,
+      maxWidth: maxWidth || 720,
       height: height || "95vh",
       padding: 0,
+      width: width || "auto",
+      ...(isFullScreen ? { left: 0 } : {}),
     },
   };
 
