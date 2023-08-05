@@ -32,5 +32,8 @@
   .children-wrapper {
     padding: 0 16px 8px;
     height: calc(100% - 56px);
+    @media (max-width: 768px) {
+      padding: 0 8px 8px;
+    }
   }
 }
