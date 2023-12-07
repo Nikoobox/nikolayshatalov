@@ -10,73 +10,99 @@ import {
   SiMongodb,
   SiFirebase,
   SiMui,
+  SiStorybook,
+  SiJest,
+  SiReduxsaga,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
+
+const MAIN = "main";
+const ADDITIONAL = "additional";
 
 export const SKILLS_DATA = [
   {
     name: "Javascript",
-    class: "skill-name",
     iconType: SiJavascript,
+    type: MAIN,
   },
   {
     name: "React",
-    class: "skill-name",
     iconType: SiReact,
+    type: MAIN,
   },
   {
     name: "Redux",
-    class: "skill-name",
     iconType: SiRedux,
+    type: MAIN,
   },
+
   {
     name: "Typescript",
-    class: "skill-name",
     iconType: SiTypescript,
+    type: MAIN,
   },
   {
     name: "ReactNative",
-    class: "skill-name",
     iconType: SiReact,
+    type: MAIN,
   },
+
   {
-    name: "Ruby",
+    name: "Storybook",
     class: "skill-name",
-    iconType: SiRuby,
-  },
-  {
-    name: "Rails",
-    class: "skill-name",
-    iconType: SiRubyonrails,
-  },
-  {
-    name: "Node.js",
-    class: "skill-name",
-    iconType: IoLogoNodejs,
+    iconType: SiStorybook,
+    type: MAIN,
   },
   {
     name: "Material UI",
-    class: "skill-name",
     iconType: SiMui,
+    type: MAIN,
+  },
+  {
+    name: "Jest",
+    iconType: SiJest,
+    type: MAIN,
+  },
+  {
+    name: "Redux-saga",
+    iconType: SiReduxsaga,
+    type: MAIN,
   },
   {
     name: "HTML5",
-    class: "skill-name",
     iconType: SiHtml5,
+    type: MAIN,
   },
   {
     name: "CSS3",
-    class: "skill-name",
+
     iconType: SiCss3,
+    type: MAIN,
+  },
+  {
+    name: "Ruby",
+
+    iconType: SiRuby,
+    type: ADDITIONAL,
+  },
+  {
+    name: "Rails",
+    iconType: SiRubyonrails,
+    type: ADDITIONAL,
+  },
+  {
+    name: "Node.js",
+    iconType: IoLogoNodejs,
+    type: ADDITIONAL,
   },
   {
     name: "MongoDB",
-    class: "skill-name",
     iconType: SiMongodb,
+    type: ADDITIONAL,
   },
   {
     name: "Firebase",
-    class: "skill-name",
     iconType: SiFirebase,
+    type: ADDITIONAL,
   },
 ];
