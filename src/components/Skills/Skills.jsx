@@ -10,8 +10,8 @@ import d3Icon from "./d3Icon.png";
 const MAIN = "main";
 const ADDITIONAL = "additional";
 
-const renderSkills = ({ type }) => {
-  return SKILLS_DATA.filter((item) => item.type === type).map((skill, idx) => {
+const renderSkills = ({ type }) =>
+  SKILLS_DATA.filter((item) => item.type === type).map((skill, idx) => {
     const TechIcon = skill.iconType;
     return (
       <Skill key={idx} id={idx}>
@@ -20,7 +20,6 @@ const renderSkills = ({ type }) => {
       </Skill>
     );
   });
-};
 
 const Skills = () => {
   const { ref, inView } = useInView({
