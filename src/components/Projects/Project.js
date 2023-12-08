@@ -54,6 +54,8 @@ const Project = (props) => {
     return COLORS[index];
   };
 
+  const randomColor = getRandomColor();
+
   return (
     <>
       <motion.div
@@ -70,7 +72,8 @@ const Project = (props) => {
             <div
               className="content"
               style={{
-                border: `4px solid ${getRandomColor()}`,
+                border: `4px solid ${randomColor}`,
+                // boxShadow: `0 0 8px ${randomColor}`,
               }}
             >
               <div className="links_box_large">
