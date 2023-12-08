@@ -24,7 +24,7 @@ const Background = () => {
               },
               line_linked: {
                 enable: true,
-                opacity: 0.03,
+                opacity: 0.04,
               },
               move: {
                 random: true,
@@ -41,7 +41,7 @@ const Background = () => {
                 anim: {
                   enable: true,
                   speed: 1,
-                  opacity_min: 0.1,
+                  opacity_min: 0.5,
                 },
               },
             },
