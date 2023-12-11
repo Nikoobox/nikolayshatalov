@@ -183,9 +183,22 @@
       color: $mainWhite;
       border: solid $mainWhite 2px;
       transition: ease-out 0.3s all;
+      // animation: flux 3s linear infinite;
     }
   }
 }
+
+// @keyframes flux {
+//   0%,
+//   100% {
+//     box-shadow: 0 0 2px $tealAccent, 0 0 6px $tealAccent, 0 0 20px $tealAccent,
+//       0 0 20px $tealAccent, 0 0 1px #8bfdfe, 1px 1px 0.5px #147280;
+//   }
+//   50% {
+//     box-shadow: 0 0 1px $tealAccent, 0 0 3px $tealAccent, 0 0 10px $tealAccent,
+//       0 0 10px $tealAccent, 0 0 0.5px $tealAccent, 1px 1px 0.5px #0a3940;
+//   }
+// }
 
 .resume-link-browser {
   margin-left: 32px;

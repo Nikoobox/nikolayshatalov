@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -17,12 +17,20 @@ import resume from "./Nikolay_Shatalov_july_2023.pdf";
 import MyModal from "../Modal/Modal";
 import PdfViewer from "../PdfViewer/PdfViewer";
 
-const Contact = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-  });
+const threshold = 0.2;
 
-  const [isOpen, setIsOpen] = React.useState(false);
+const Contact = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const { ref: imgRef, inView: imgInView } = useInView({
+    threshold,
+  });
+  const { ref: textRef, inView: textInView } = useInView({
+    threshold,
+  });
+  const { ref: resumeRef, inView: resumeInView } = useInView({
+    threshold,
+  });
 
   return (
     <>
@@ -46,9 +54,9 @@ const Contact = () => {
           <div className="about-box ">
             <motion.div
               className="img-box"
-              ref={ref}
+              ref={imgRef}
               initial={{ opacity: 0 }}
-              animate={inView && { opacity: 1 }}
+              animate={imgInView && { opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <img src={profilePic} alt="profile" />
@@ -56,17 +64,17 @@ const Contact = () => {
             <div className="info">
               <motion.div
                 className="info-text"
-                ref={ref}
+                ref={textRef}
                 initial={{ y: 30, opacity: 0 }}
-                animate={inView && { y: 0, opacity: 1 }}
+                animate={textInView && { y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
               >
                 {bioData.contactSection}
               </motion.div>
               <motion.div
-                ref={ref}
+                ref={resumeRef}
                 initial={{ y: 40, opacity: 0 }}
-                animate={inView && { y: 0, opacity: 1 }}
+                animate={resumeInView && { y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               >
                 {/* on smaller screens pdf is downloaded on click */}
