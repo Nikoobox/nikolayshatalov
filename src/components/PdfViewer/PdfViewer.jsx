@@ -1,6 +1,6 @@
 import React from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import resume from "./Nikolay_Shatalov_july_2023.pdf";
+import resume from "./Nikolay_Shatalov_July_2024_CV.pdf";
 import "./pdf-viewer.scss";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { ClipLoader } from "react-spinners";
