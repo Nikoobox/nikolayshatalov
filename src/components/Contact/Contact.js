@@ -13,7 +13,7 @@ import ContactForm from "./ContactForm";
 import "./contact.scss";
 import profilePic from "./profile.jpg";
 import { bioData } from "../data/bioData";
-import resume from "./Nikolay_Shatalov_July_2024.pdf";
+import resume from "./Nikolay_Shatalov_July_2024_v3.pdf";
 import MyModal from "../Modal/Modal";
 import PdfViewer from "../PdfViewer/PdfViewer";
 
